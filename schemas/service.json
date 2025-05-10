@@ -1,0 +1,54 @@
+{
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Soluções Estratégicas em Tecnologia, Design, Publicidade e Marketing Digital",
+    "provider": {
+        "@type": "Organization",
+        "name": "Bruno Lomba | Soluções em Design e Tecnologia para Negócios",
+        "url": "https://www.brunolomba.com.br",
+        "logo": "https://www.brunolomba.com.br/logo.png"
+    },
+    "description": "Desenvolvemos soluções estratégicas e eficientes para impulsionar o crescimento de negócios através da Tecnologia, Design, Publicidade e Marketing Digital, entregando resultados reais e mensuráveis.",
+    "areaServed": {
+        "@type": "Country",
+        "name": "Brasil"
+    },
+    "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Serviços Oferecidos",
+        "itemListElement": [
+        {
+            "@type": "Offer",
+            "itemOffered": {
+            "@type": "Service",
+            "name": "Tecnologia",
+            "description": "Desenvolvimento de sites, sistemas e soluções digitais inovadoras para otimizar processos e impulsionar o crescimento dos negócios."
+            }
+        },
+        {
+            "@type": "Offer",
+            "itemOffered": {
+            "@type": "Service",
+            "name": "Design",
+            "description": "Criação de identidades visuais, UX/UI, branding e design gráfico moderno e funcional, focado na experiência do usuário."
+            }
+        },
+        {
+            "@type": "Offer",
+            "itemOffered": {
+            "@type": "Service",
+            "name": "Publicidade",
+            "description": "Campanhas publicitárias estratégicas para fortalecer a presença da sua marca e atrair mais clientes em diversos canais."
+            }
+        },
+        {
+            "@type": "Offer",
+            "itemOffered": {
+            "@type": "Service",
+            "name": "Marketing Digital",
+            "description": "Estratégias completas de marketing digital, incluindo SEO, gestão de redes sociais, mídia paga e geração de leads qualificados."
+            }
+        }
+        ]
+    }
+}

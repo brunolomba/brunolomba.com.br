@@ -1,0 +1,391 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    text-decoration: none;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    all: initial;
+}
+
+/* Variáveis */
+:root {
+    /* Variaveis Theme Dark */
+    --primary-color: #000;
+    --background-color: #111111;
+    --text-color: #fff;
+    --secondary-color: #e0e0e0;
+
+    /* Variaveis Globais */
+    --white: #fff;
+    --black: #000;
+    --grey-medium: #292929;
+    --green: #00ccaa;
+    --pink: #ff5cb8;
+    --yellow: #ffbb00;
+    --purple: #b300ff;
+    --whatsapp-green: #128C7E;
+    --whatsapp-green-light: #25D366;
+
+    /* Fonts size */
+    --font-size-small: 1.2rem;
+    --font-size-normal: 1.6rem;
+    --font-size-large: 2.0rem;
+    --font-size-logo: 2.0rem;
+}
+
+/* Tema Light */
+[data-theme="light"] {
+    --primary-color: #fff;
+    --background-color: #e9e9e9;
+    --text-color: #222;
+    --secondary-color: #444;
+}
+
+/* Estruturas bases HTML */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: background 0.5s, color 0.5s;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background: var(--primary-color);
+    z-index: 100;
+    animation: descer 1.5s ease-in-out;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+}
+
+main {
+    background-color: var(--background-color);
+}
+
+/* Under Construction */
+.under-constructionBanner {
+    padding: 5px 0;
+    text-align: center;
+    font-size: var(--normal-fontSize);
+    color: #797979;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Logo */
+#logo {
+    font-size: var(--font-size-logo);
+    font-family: "Poppins";
+    line-height: 35px;
+    white-space: nowrap;
+}
+
+/* Toggle Theme */
+#toggle-theme {
+    margin-right: 46px;
+    text-indent: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--text-color);
+    font-family: sans-serif;
+    width: 24px;
+    height: 24px;
+    background-image: url(./assets/images/dark-theme.svg);
+    background-position-x: -3px;
+    border-radius: 100%;
+    background-color: var(--secondary-color);
+    transition: all 0.2s ease-in-out;
+}
+
+[data-theme="light"] #toggle-theme {
+    background-color: var(--yellow);
+    background-image: none;
+}
+
+/* Navegation */
+#nav {
+    width: 100%;
+}
+
+.nav-list {
+    display: flex;
+    margin-left: 25px;
+    margin-right: 25px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.nav-link,
+.nav-link:visited {
+    position: reletive;
+    white-space: nowrap;
+    font-size: var(--font-size-normal);
+    transition: color 0.3s;
+}
+
+.nav-tecnologia {
+    color: var(--green);
+}
+
+.nav-design {
+    color: var(--pink);
+}
+
+.nav-publicidade {
+    color: var(--yellow);
+}
+
+.nav-marketing {
+    color: var(--purple);
+}
+
+/* Introdução */
+#intro {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: -30px;
+    animation: aparecer 5s ease-in-out;
+}
+
+#animationIntro {
+    margin-top: 150px;
+    width: 100%;
+}
+
+#intro-text,
+#intro-text strong {
+    font-size: var(--font-size-large);
+    color: var(--text-color);
+    margin: 0 auto;
+    width: 85%;
+}
+
+#intro-text strong {
+    color: var(--green);
+}
+
+/* Footer */
+#footer {
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-contact-fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+#contact-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    background: var(--primary-color);
+}
+
+#contact-text {
+    font-weight: 500;
+    font-size: var(--normal-fontSize);
+    color: var(--text-color);
+}
+
+#whatsapp-contact {
+    font-weight: 600;
+    font-size: var(--font-size-large);
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+#btn-whatsapp {
+    font-weight: 600;
+    font-size: var(--normal-fontSize);
+    color: var(--white);
+    text-decoration: none;
+
+    border: 2px solid var(--whatsapp-green-light);
+    background-color: var(--whatsapp-green-light);
+    border-radius: 1rem;
+    padding: 5px 20px;
+    margin: 0 10px;
+}
+
+#whatsapp-contact:hover {
+    color: var(--whatsapp-green-light);
+}
+
+.footer-copyright-container {
+    padding: 0px;
+    height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    transition: all 0.8s ease-in-out;
+}
+
+.footer-copyright {
+    color: transparent;
+    transition: all 0.5s ease-in;
+}
+
+/* Animação para aparecer o copyright com o hover no footer */
+#contact-bar:hover+.footer-copyright-container,
+.footer-copyright-container:hover,
+.footer-copyright-container-visible {
+    height: 30px !important;
+}
+
+#contact-bar:hover+.footer-copyright-container .footer-copyright,
+.footer-copyright-container-visible .footer-copyright,
+.footer-copyright-container:hover .footer-copyright {
+    color: var(--secondary-color);
+    transition: all 0.8s ease-in;
+}
+
+/* Animações */
+
+/* Line Color RGB Animated  */
+.line-color {
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg in hsl longer hue, red, blue);
+    background-size: 200% 100%;
+    backdrop-filter: blur(5px);
+    animation: moveLineColor 10s linear infinite alternate;
+}
+
+[data-theme="light"] .line-color {
+    height: 3px;
+}
+
+/* Animated Colorful Line */
+@keyframes moveLineColor {
+    from {
+        background-position: 0% 100%;
+    }
+
+    to {
+        background-position: 100% 0;
+    }
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes subir {
+    from {
+        transform: translateY(100%)
+    }
+
+    to {
+        transform: translateY(0)
+    }
+}
+
+@keyframes descer {
+    from {
+        transform: translateY(-100%)
+    }
+
+    to {
+        transform: translateY(0)
+    }
+}
+
+@keyframes descerServices {
+    from {
+        transform: translateY(-300%)
+    }
+
+    to {
+        transform: translateY(0)
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (min-width: 768px) {
+
+    /* Header */
+    .header-container {
+        flex-wrap: nowrap;
+    }
+
+    #logo {
+        order: 1
+    }
+
+    #nav {
+        order: 2;
+    }
+
+    .nav-list {
+        padding: 10px 200px;
+    }
+
+    .nav-link {
+        font-size: var(--font-size-normal);
+    }
+
+    .nav-link::before {
+        margin-left: -15px;
+        height: 20px;
+    }
+
+    #toggle-theme {
+        order: 3;
+    }
+
+    /* Intro */
+    #intro {
+        padding-bottom: 4rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    #animationIntro {
+        width: 75%;
+    }
+}

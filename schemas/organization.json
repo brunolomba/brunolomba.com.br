@@ -1,0 +1,24 @@
+{
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Bruno Lomba | Soluções em Design e Tecnologia para Negócios",
+    "url": "https://www.brunolomba.com.br",
+    "logo": "https://www.seusite.com.br/logo.png",
+    "description": "Soluções estratégicas e eficientes em Tecnologia, Design, Publicidade e Marketing Digital para impulsionar o crescimento do seu negócio com resultados reais e mensuráveis.",
+    "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Atibaia",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+    },
+    "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+55 11 95219-3890",
+        "contactType": "customer support",
+        "areaServed": "BR",
+        "availableLanguage": ["Portuguese"]
+    },
+    "sameAs": [
+        "https://www.linkedin.com/in/brunogodoilomba/"
+    ]
+}
