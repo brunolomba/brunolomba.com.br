@@ -1,7 +1,8 @@
 // SCRIPTS para alterar o tema dark e light
 const toggleTheme = document.getElementById('toggle-theme');
 const html = document.querySelector('html');
-const favoriteThemeDark = window.matchMedia('(prefers-color-scheme: dark)').matches === true
+const favoriteThemeDark =
+  window.matchMedia('(prefers-color-scheme: dark)').matches === true;
 
 // Verifica se o tema preferido é escuro e aplica o tema correspondente
 if (favoriteThemeDark) {
@@ -21,7 +22,7 @@ toggleTheme.addEventListener('click', () => {
     html.dataset.theme = 'dark';
     toggleTheme.textContent = 'Dark';
   }
-})
+});
 
 // CORRIGIR --------------
 // SCRIPTS para o menu de navegação
@@ -39,12 +40,12 @@ navButton.addEventListener('click', () => {
     nav.classList.add('nav__visible');
     navButton.setAttribute('aria-expanded', 'true');
   }
-})
+});
 
 // Esconde o menu quando um link é clicado
-navLink.forEach(link => {
+navLink.forEach((link) => {
   link.addEventListener('click', () => {
     nav.classList.remove('nav__visible');
     navButton.setAttribute('aria-expanded', 'false');
-  })
-})
+  });
+});
