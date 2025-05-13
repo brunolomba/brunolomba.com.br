@@ -1,4 +1,4 @@
-// Alterna tema entre dark e light -------------------------------------------------------------------------
+// Alterna tema entre dark e light
 const toggleTheme = document.getElementById('toggle-theme');
 const html = document.querySelector('html');
 const favoriteThemeDark = window.matchMedia('(prefers-color-scheme: dark)').matches === true
