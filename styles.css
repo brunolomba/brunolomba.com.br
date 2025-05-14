@@ -148,13 +148,14 @@ body {
 }
 
 header {
-    top: 0;
     width: 100%;
+    height: 0;
+    z-index: 100;
 }
 
 main {
     background-color: var(--primary-background-color);
-    margin-top: 65px;
+    margin-top: 130px;
 }
 
 /* Header */
@@ -214,23 +215,20 @@ main {
 .nav {
     position: fixed;
     width: 100%;
+    height: 90.1vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
-    opacity: 0;
-    height: 0;
-    padding: 80px 0 55px;
-    transform: translateY(-100%);
+    padding: 80px 0 0;
+    background-color: var(--primary-color);
+    transform: translateY(-82%);
     transition: transform 3.0s ease;
-    z-index: 90;
 }
 
 .nav__visible {
-    opacity: 1;
-    height: 100%;
     transform: translateY(0);
-    background-color: var(--primary-color);
+
 }
 
 .nav-list {
@@ -239,14 +237,17 @@ main {
     justify-content: flex-end;
     align-items: center;
     width: 100%;
-    padding: 20px 0;
 }
 
 .nav-item {
-    border-bottom: 1px solid #d8d8d8;
+    border-bottom: 1px solid #2e2e2e;
     text-align: center;
     width: 100%;
     padding: 20px 0;
+}
+
+[data-theme="light"] .nav-item {
+    border-bottom: 1px solid #e2e2e2;
 }
 
 .nav-item:hover {
@@ -262,6 +263,8 @@ main {
 
 /* Peril */
 .perfil-img {
+    position: absolute;
+    top: 80px;
     width: 20vh;
     height: 20vh;
     transform: scaleX(-1);
@@ -269,10 +272,12 @@ main {
 }
 
 /* Areas */
-.areas {
+.areas__container {
     display: flex;
     flex-wrap: wrap;
+    justify-self: flex-end;
     justify-content: space-between;
+    width: 100%;
     padding: 20px;
     background-color: var(--primary-color);
 }
@@ -494,8 +499,8 @@ main {
 
 .works__item {
     position: relative;
-    width: 99%;
-    height: 97%;
+    width: 150px;
+    height: 64px;
     padding: 15px;
     object-fit: contain;
     border-radius: var(--btn-border);
@@ -519,7 +524,6 @@ main {
     bottom: 0;
     width: 100%;
     animation: subir 1s ease-in-out;
-    z-index: 100;
 }
 
 #contact-bar {
@@ -659,7 +663,7 @@ main {
 
     /* Header */
     /* Areas */
-    .areas {
+    .areas__container {
         justify-content: center;
         gap: 20px;
     }
