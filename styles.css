@@ -50,9 +50,9 @@ button {
 
     /* Font size */
     --font-size-small: 1.2rem;
-    --font-size-normal: 1.6rem;
+    --font-size-normal: 1.5rem;
     --font-size-large: 2.0rem;
-    --font-size-logo: 2.0rem;
+    --font-size-logo: 2.5rem;
 
     /* Borders */
     --btn-border: 0.5rem;
@@ -76,7 +76,7 @@ button {
 .btn-projects,
 .btn-cta,
 .btn-whatsapp {
-    padding: 10px 20px;
+    padding: 15px 20px;
     font-size: var(--font-size-normal);
     color: var(--white);
     font-weight: 500;
@@ -154,7 +154,7 @@ header {
 
 main {
     background-color: var(--primary-background-color);
-    margin-top: 55px;
+    margin-top: 65px;
 }
 
 /* Header */
@@ -165,7 +165,7 @@ main {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 10px 20px;
+    padding: 15px 20px;
     background: var(--primary-color);
     z-index: 100;
 }
@@ -375,7 +375,8 @@ main {
 }
 
 .projects-done__icon-check {
-    width: 20px;
+    min-width: 20px;
+    max-width: 20px;
     border-radius: var(--border-100);
 }
 
@@ -476,15 +477,25 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     flex-direction: row;
     padding: 20px 0;
     gap: 20px;
 }
 
+.light-color-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 152px;
+    height: 66px;
+    border-radius: var(--btn-border);
+}
+
 .works__item {
     position: relative;
     width: 99%;
-    height: 99%;
+    height: 97%;
     padding: 15px;
     object-fit: contain;
     border-radius: var(--btn-border);
@@ -493,15 +504,6 @@ main {
 
 [data-theme="light"] .works__item {
     background-color: var(--text-color);
-}
-
-.light-color-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 65px;
-    border-radius: var(--btn-border);
 }
 
 /* Footer */
@@ -524,7 +526,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 0;
+    padding: 15px 0;
     background: var(--primary-color);
 }
 
@@ -536,6 +538,8 @@ main {
 
 .btn-whatsapp {
     display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-weight: 700;
     background-color: var(--whatsapp-green-light);
     margin-left: 10px;
@@ -543,7 +547,7 @@ main {
 
 .icon-whatsapp {
     align-self: flex-end;
-    width: 15px;
+    width: 17px;
     margin-left: 5px;
     fill: var(--white);
 }
@@ -589,7 +593,7 @@ main {
 
 .line-top {
     position: fixed;
-    top: 55px;
+    top: 65px;
     width: 100%;
     z-index: 101;
 }
@@ -654,14 +658,14 @@ main {
 @media (min-width: 768px) {
 
     /* Header */
-    .header-container {
-        flex-wrap: nowrap;
-    }
-
     /* Areas */
     .areas {
         justify-content: center;
         gap: 20px;
+    }
+
+    .areas-text {
+        font-size: var(--font-size-large);
     }
 
     /* Hero */
@@ -685,29 +689,39 @@ main {
     }
 
     .hero-animation__container {
-        width: 40%;
         height: 32vh;
+        width: 40%;
     }
 
     .hero-highlights__container {
         flex-grow: 1;
     }
+
+    /* Works Brands */
+    .works__container {
+        width: 640px;
+    }
 }
 
 @media (min-width: 1024px) {
+
+    /* Max-Width */
+    #hero,
+    .works__container {
+        max-width: 1400px;
+
+    }
 
     /* Hero */
     #hero {
         flex-direction: row;
         justify-self: center;
-        max-width: 1200px;
-        gap: 10vw;
     }
 
     /* Hero Infos */
     .hero-info__container {
-        width: 60%;
-        gap: 50px;
+        width: 50%;
+        /* gap: 50px; */
     }
 
     /* Hero Image */
@@ -718,7 +732,7 @@ main {
 
     .hero-animation__container {
         min-width: 100%;
-        height: 14vw;
+        height: 20vw;
     }
 
     .hero-animation {
@@ -726,6 +740,11 @@ main {
     }
 
     /* Works Brands */
+    .works__container {
+        width: 100%;
+        gap: 20px;
+    }
+
     .light-color-container:hover {
         background: linear-gradient(90deg in hsl longer hue, red, blue);
         background-size: 150% 100%;
