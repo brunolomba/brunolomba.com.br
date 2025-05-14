@@ -30,9 +30,12 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
         rel="stylesheet">
 
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Css -->
     <link rel='stylesheet' href='styles.css'>
 </head>
@@ -45,36 +48,29 @@
             <button id='toggle-theme'>Theme</button>
             <h1 id='logo'>BRUNO LOMBA</h1>
             <button class='nav-btn'>MENU</button>
-
         </div>
 
         <!-- Animated Colorful Line -->
         <div class='line-color line-top'></div>
 
         <!-- Navigation -->
-        <nav class='nav'> Navegação </nav>
-        <!-- <nav class='nav'>
+        <nav class='nav'>
+            <img src='./assets/images/perfil.jpeg' alt='' class='perfil-img'>
             <ul class='nav-list'>
                 <li class='nav-item'>
-                    <a href='#tecnologia' class='nav-link nav-tecnologia' role='region'
-                        aria-label='Tecnologia'>Tecnologia</a>
+                    <a href='#sobre' class='nav-link' role='region' aria-label='Sobre mim'>Sobre mim</a>
                 </li>
-                <span>+</span>
                 <li class='nav-item'>
-                    <a href='#design' class='nav-link nav-design' role='region' aria-label='Design'>Design</a>
+                    <a href='#' class='nav-link' role='region' aria-label='Tecnologias'>Tecnologias</a>
                 </li>
-                <span>+</span>
                 <li class='nav-item'>
-                    <a href='#publicidade' class='nav-link nav-publicidade' role='region'
-                        aria-label='Publicidade'>Publicidade</a>
+                    <a href='#' class='nav-link' role='region' aria-label='Empresas'>Empresas</a>
                 </li>
-                <span>+</span>
                 <li class='nav-item'>
-                    <a href='#marketing' class='nav-link nav-marketing' role='region' aria-label='Marketing Digital'>MKT
-                        Digital</a>
+                    <a href='#' class='nav-link' role='region' aria-label='Contato'>Contato</a>
                 </li>
             </ul>
-        </nav> -->
+        </nav>
     </header>
 
     <main id='main'>
@@ -120,55 +116,58 @@
                 </div>
 
                 <!-- Highlights -->
-                <div class='highlights__container border-tecnologia'>
-                    <svg class='projects-done__icon-check fill-tecnologia' xmlns='http://www.w3.org/2000/svg'
-                        viewBox='0 0 448 512'>
-                        <path
-                            d='M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z' />
-                    </svg>
-                    <div class='projetcs-done__texts'>
-                        <p class='projets-done__title color-tecnologia'>Em tecnologia trabalhei para grandes empresas do
-                            mercado de
-                            Ecommerce</p>
-                        <p class='projets-done__text'>Clientes Satisfeitos</p>
+                <div class='hero-highlights__container'>
+                    <div class='highlights__container border-tecnologia'>
+                        <svg class='projects-done__icon-check fill-tecnologia' xmlns='http://www.w3.org/2000/svg'
+                            viewBox='0 0 448 512'>
+                            <path
+                                d='M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z' />
+                        </svg>
+                        <div class='projetcs-done__texts'>
+                            <p class='projets-done__title color-tecnologia'>Em tecnologia trabalhei para grandes
+                                <br>empresas de Ecommerce
+                            </p>
+                            <p class='projets-done__text'>Clientes Satisfeitos</p>
+                        </div>
                     </div>
-                </div>
-                <div class='highlights__container border-design'>
-                    <svg class='projects-done__icon-check fill-design' xmlns='http://www.w3.org/2000/svg'
-                        viewBox='0 0 448 512'>
-                        <path
-                            d='M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z' />
-                    </svg>
-                    <div class='projetcs-done__texts'>
-                        <p class='projets-done__title color-design'>+17 Anos de Experiência com <br> Design | Direção de
-                            Arte
-                        </p>
-                        <p class='projets-done__text'>Clientes Satisfeitos</p>
+                    <div class='highlights__container border-design'>
+                        <svg class='projects-done__icon-check fill-design' xmlns='http://www.w3.org/2000/svg'
+                            viewBox='0 0 448 512'>
+                            <path
+                                d='M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z' />
+                        </svg>
+                        <div class='projetcs-done__texts'>
+                            <p class='projets-done__title color-design'>+17 Anos de Experiência com <br> Design |
+                                Direção de
+                                Arte
+                            </p>
+                            <p class='projets-done__text'>Clientes Satisfeitos</p>
+                        </div>
                     </div>
-                </div>
-                <div class='highlights__container border-publicidade'>
-                    <svg class='projects-done__icon-check fill-publicidade' xmlns='http://www.w3.org/2000/svg'
-                        viewBox='0 0 448 512'>
-                        <path
-                            d='M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z' />
-                    </svg>
-                    <div class='projetcs-done__texts'>
-                        <p class='projets-done__title color-publicidade'>Formado em Publicidade e Propagande | 2012
-                        </p>
-                        <p class='projets-done__text'>Clientes Satisfeitos</p>
+                    <div class='highlights__container border-publicidade'>
+                        <svg class='projects-done__icon-check fill-publicidade' xmlns='http://www.w3.org/2000/svg'
+                            viewBox='0 0 448 512'>
+                            <path
+                                d='M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z' />
+                        </svg>
+                        <div class='projetcs-done__texts'>
+                            <p class='projets-done__title color-publicidade'>Formado em Publicidade e Propagande | 2012
+                            </p>
+                            <p class='projets-done__text'>Clientes Satisfeitos</p>
+                        </div>
                     </div>
-                </div>
-                <div class='highlights__container border-marketing'>
-                    <svg class='projects-done__icon-check fill-marketing' xmlns='http://www.w3.org/2000/svg'
-                        viewBox='0 0 448 512'>
-                        <path
-                            d='M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z' />
-                    </svg>
-                    <div class='projetcs-done__texts'>
-                        <p class='projets-done__title color-marketing'>Marketing aplicado na prática</p>
-                        <p class='projets-done__text'>Clientes Satisfeitos</p>
+                    <div class='highlights__container border-marketing'>
+                        <svg class='projects-done__icon-check fill-marketing' xmlns='http://www.w3.org/2000/svg'
+                            viewBox='0 0 448 512'>
+                            <path
+                                d='M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z' />
+                        </svg>
+                        <div class='projetcs-done__texts'>
+                            <p class='projets-done__title color-marketing'>Marketing aplicado na prática</p>
+                            <p class='projets-done__text'>Clientes Satisfeitos</p>
+                        </div>
                     </div>
-                </div>
+                </div class='hero-highlights__container'>
             </div>
 
         </section>
@@ -176,12 +175,180 @@
         <!-- Intro -->
         <section id='intro'>
             <h2 class='intro__title'>Quem sou eu</h2>
-            <p id='intro-text'>
+            <p class='intro-text d-none'>
                 <strong>Olá,</strong> sou <strong>Publicitário</strong>, <strong>Diretor de Arte</strong> e<strong>
                     Desenvolvedor</strong>.<br>
                 Estou criando um novo site para apresentar
                 meus <strong>SERVIÇOS</strong> e <strong>PORTFÓLIO</strong>.
             </p>
+        </section>
+
+        <section class="works">
+            <h2 class="works__title">Clientes que já atendi e Empresas que trabalhei</h2>
+            <div class="works__container">
+                <img src="./assets/images/works/logo-electrolux.png" alt="Logo Electrolux" class="works__item" />
+                <img src="./assets/images/works/logo-sicredi.png" alt="Logo Sicredi" class="works__item" />
+                <img src="./assets/images/works/logo-picpay.png" alt="Logo PicPay" class="works__item" />
+                <img src="./assets/images/works/logo-paguemenos.png" alt="Logo Pague Menos" class="works__item" />
+                <img src="./assets/images/works/logo-acct.png" alt="Logo ACCT" class="works__item">
+                <img src="./assets/images/works/logo-quality.png" alt="Logo Quality Digital" class="works__item">
+            </div>
+        </section>
+
+        <section class="knowledge d-none">
+            <!-- Font Awesome Resolver ou remover -->
+            <h2 class="knowledge__title">Conhecimento</h2>
+            <h3 class="tecnologia">Tecnologia</h3>
+            <div class="tech-grid">
+                <!-- HTML5 -->
+                <div class="tech-item">
+                    <div class="tech-icon html5">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="tech-name">HTML5</div>
+                </div>
+
+                <!-- CSS3 -->
+                <div class="tech-item">
+                    <div class="tech-icon css3">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <div class="tech-name">CSS3</div>
+                </div>
+
+                <!-- JavaScript -->
+                <div class="tech-item">
+                    <div class="tech-icon javascript">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <div class="tech-name">JavaScript</div>
+                </div>
+
+                <!-- Bootstrap -->
+                <div class="tech-item">
+                    <div class="tech-icon bootstrap">
+                        <i class="fab fa-bootstrap"></i>
+                    </div>
+                    <div class="tech-name">Bootstrap</div>
+                </div>
+
+                <!-- Tailwind -->
+                <div class="tech-item">
+                    <div class="tech-icon tailwind">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <div class="tech-name">Tailwind</div>
+                </div>
+
+                <!-- React -->
+                <div class="tech-item">
+                    <div class="tech-icon react">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <div class="tech-name">React</div>
+                </div>
+
+                <!-- Git -->
+                <div class="tech-item">
+                    <div class="tech-icon git">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <div class="tech-name">Git</div>
+                </div>
+
+                <!-- SASS -->
+                <div class="tech-item">
+                    <div class="tech-icon sass">
+                        <i class="fab fa-sass"></i>
+                    </div>
+                    <div class="tech-name">SASS</div>
+                </div>
+
+                <!-- Wix -->
+                <div class="tech-item">
+                    <div class="tech-icon wix">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="tech-name">Wix</div>
+                </div>
+
+                <!-- VS Code -->
+                <div class="tech-item">
+                    <div class="tech-icon vscode">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="tech-name">VS Code</div>
+                </div>
+            </div>
+            <h3 class="tecnologia">Design</h3>
+            <div class="tech-grid">
+                <!-- Photoshop -->
+                <div class="tech-item">
+                    <div class="tech-icon photoshop">
+                        <i class="fab fa-adobe"></i>
+                    </div>
+                    <div class="tech-name">Photoshop</div>
+                </div>
+
+                <!-- Illustrator -->
+                <div class="tech-item">
+                    <div class="tech-icon illustrator">
+                        <i class="fas fa-pen-fancy"></i>
+                    </div>
+                    <div class="tech-name">Illustrator</div>
+                </div>
+
+                <!-- InDesign -->
+                <div class="tech-item">
+                    <div class="tech-icon indesign">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="tech-name">InDesign</div>
+                </div>
+
+                <!-- Figma -->
+                <div class="tech-item">
+                    <div class="tech-icon figma">
+                        <i class="fab fa-figma"></i>
+                    </div>
+                    <div class="tech-name">Figma</div>
+                </div>
+            </div>
+            <h3 class="tecnologia">Projeto e Processos</h3>
+            <div class="tech-grid">
+                <!-- Notion -->
+                <div class="tech-item">
+                    <div class="tech-icon notion">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="tech-name">Notion</div>
+                </div>
+
+                <!-- JIRA -->
+                <div class="tech-item">
+                    <div class="tech-icon jira">
+                        <i class="fab fa-jira"></i>
+                    </div>
+                    <div class="tech-name">JIRA</div>
+                </div>
+
+                <!-- ClickUp -->
+                <div class="tech-item">
+                    <div class="tech-icon clickup">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <div class="tech-name">ClickUp</div>
+                </div>
+
+                <!-- Gitflow -->
+                <div class="tech-item">
+                    <div class="tech-icon gitflow">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <div class="tech-name">Gitflow</div>
+                </div>
+            </div>
+
         </section>
     </main>
 
@@ -214,6 +381,9 @@
 
     <!-- Scripts -->
     <script defer src='script.js'></script>
+
+    <!-- Font Awesome Script -->
+    <!-- <script src="https://kit.fontawesome.com/f892daa4e8.js" crossorigin="anonymous"></script> -->
 
     <!-- Script for AnimationIntro -->
     <script src='https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs' type='module'>
