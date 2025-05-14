@@ -41,11 +41,16 @@
 </head>
 
 <body>
+    <!-- Loading -->
+    <div class='loading'>
+        <div class='up'></div>
+        <div class='down'></div>
+    </div>
     <!-- Logo -->
     <header>
         <div class='header-container'>
             <!-- Toggle Theme -->
-            <button id='toggle-theme'>Theme</button>
+            <button id='toggle-theme'></button>
             <h1 id='logo'>BRUNO LOMBA</h1>
             <button class='nav-btn'>MENU</button>
         </div>
@@ -106,7 +111,6 @@
     </header>
 
     <main id='main'>
-
         <section id='hero'>
             <div class='hero-info__container'>
                 <!-- Hero Areas -->
@@ -125,7 +129,9 @@
                 <!-- Hero Btns -->
                 <div class='hero-info__btn'>
                     <a class='btn-projects'>Portfólio</a>
-                    <a class='btn-cta'>Fale Comigo</a>
+                    <!-- Remover Botão ??? -->
+                    <a href='https://api.whatsapp.com/send/?phone=5511952193890&text=Ol%C3%A1+Bruno%21+Gostaria+de+solicitar+um+or%C3%A7amento.+Encontrei+seu+site+e+estou+interessado+nos+seus+servi%C3%A7os.&type=phone_number&app_absent=0'
+                        target='_blank' class='btn-cta'>Fale Comigo</a>
                 </div>
             </div>
 
@@ -392,15 +398,10 @@
         </section>
     </main>
 
-    <footer id='footer'>
-
-    </footer>
+    <footer id='footer'></footer>
 
     <!-- Scripts -->
     <script defer src='script.js'></script>
-
-    <!-- Font Awesome Script -->
-    <!-- <script src="https://kit.fontawesome.com/f892daa4e8.js" crossorigin="anonymous"></script> -->
 
     <!-- Script for AnimationIntro -->
     <script src='https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs' type='module'>

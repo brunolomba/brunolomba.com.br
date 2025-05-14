@@ -30,14 +30,19 @@ const navButton = document.querySelector('.nav-btn');
 const navLink = document.querySelectorAll('.nav-link');
 const nav = document.querySelector('.nav');
 
+setTimeout(() => {
+  navButton.setAttribute('aria-expanded', 'false');
+  nav.classList.add('nav__hidden');
+}, 1500);
+
 // Botão para abrir e fechar o menu de navegação
 navButton.addEventListener('click', () => {
-  const isNavVisible = nav.classList.contains('nav__visible');
-  if (isNavVisible) {
-    nav.classList.remove('nav__visible');
+  const isNavHidden = nav.classList.contains('nav__hidden');
+  if (isNavHidden) {
+    nav.classList.remove('nav__hidden');
     navButton.setAttribute('aria-expanded', 'false');
   } else {
-    nav.classList.add('nav__visible');
+    nav.classList.add('nav__hidden');
     navButton.setAttribute('aria-expanded', 'true');
   }
 });
@@ -45,7 +50,28 @@ navButton.addEventListener('click', () => {
 // Esconde o menu quando um link é clicado
 navLink.forEach((link) => {
   link.addEventListener('click', () => {
-    nav.classList.remove('nav__visible');
+    nav.classList.remove('nav__hidden');
     navButton.setAttribute('aria-expanded', 'false');
   });
 });
+
+// window.addEventListener('scroll', function () {
+//   const scroolTop = this.document.documentElement.scrollTop;
+//   const footerFixed = this.document.querySelector('.footer-contact-fixed');
+
+//   if (scroolTop >= 650) {
+//     footerFixed.classList.add('footer-visible')
+//   } else {
+//     footerFixed.classList.remove('footer-visible')
+//   }
+// });
+
+// window.addEventListener('load', () => {
+//   setTimeout(() => {
+//     const upMoving = document.querySelector('.up');
+//     const downMoving = document.querySelector('.down');
+
+//     upMoving.classList.add('loading__moving-up');
+//     downMoving.classList.add('loading__moving-down');
+//   }, 500);
+// })
