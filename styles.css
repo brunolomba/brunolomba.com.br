@@ -150,7 +150,6 @@ body {
 header {
     top: 0;
     width: 100%;
-    animation: descer 1.5s ease-in-out;
 }
 
 main {
@@ -198,6 +197,7 @@ main {
 /* Logo */
 #logo {
     font-size: var(--font-size-logo);
+    font-weight: 700;
     line-height: 35px;
     white-space: nowrap;
 }
@@ -206,6 +206,8 @@ main {
 .nav-btn {
     font-size: var(--font-size-small);
     color: var(--text-color);
+    width: 60px;
+    text-align: end;
 }
 
 /* Navegation */
@@ -218,7 +220,7 @@ main {
     align-items: center;
     opacity: 0;
     height: 0;
-    padding: 80px 0 105px;
+    padding: 80px 0 42px;
     transform: translateY(-100%);
     transition: transform 3.0s ease;
     z-index: 90;
@@ -234,14 +236,21 @@ main {
 .nav-list {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    gap: 20px;
-    padding: 20px;
+    width: 100%;
+    padding: 20px 0;
 }
 
 .nav-item {
+    border-bottom: 1px solid #d8d8d8;
     text-align: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.nav-item:hover {
+    background-color: #b300ff;
 }
 
 .nav-link {
@@ -270,7 +279,6 @@ main {
 
 .areas-text {
     font-size: var(--font-size-normal);
-
 }
 
 /* Hero */
@@ -442,17 +450,26 @@ main {
     font-size: var(--font-size-large);
 }
 
-/* Works */
+/* Works Brands*/
 .works {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 5vh;
+    background-color: var(--secondary-background-color);
+}
+
+[data-theme="light"] .works {
+    background-color: var(--secondary-color);
 }
 
 .works__title {
     padding: 20px 0;
-    font-size: var(--font-size-large);
+    font-size: var(--font-size-normal);
+}
+
+[data-theme="light"] .works__title {
+    color: var(--primary-color);
 }
 
 .works__container {
@@ -465,21 +482,27 @@ main {
 }
 
 .works__item {
-    padding: 10px;
-    max-width: 150px;
+    position: relative;
+    width: 99%;
+    height: 99%;
+    padding: 15px;
     object-fit: contain;
-    font-size: var(--font-size-large);
-    border: 1px solid var(--secondary-background-color);
-    background-color: var(--secondary-background-color);
+    border-radius: var(--btn-border);
+    background-color: var(--primary-background-color);
+}
+
+[data-theme="light"] .works__item {
+    background-color: var(--text-color);
+}
+
+.light-color-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 65px;
     border-radius: var(--btn-border);
 }
-
-.works__item:hover {
-    border: 1px solid red;
-    box-shadow: 0 0 5px 1px red;
-}
-
-/* Works Brands */
 
 /* Footer */
 #footer {
@@ -513,11 +536,13 @@ main {
 
 .btn-whatsapp {
     display: flex;
+    font-weight: 700;
     background-color: var(--whatsapp-green-light);
     margin-left: 10px;
 }
 
 .icon-whatsapp {
+    align-self: flex-end;
     width: 15px;
     margin-left: 5px;
     fill: var(--white);
@@ -559,7 +584,6 @@ main {
     height: 2px;
     background: linear-gradient(90deg in hsl longer hue, red, blue);
     background-size: 200% 100%;
-    backdrop-filter: blur(5px);
     animation: moveLineColor 10s linear infinite alternate;
 }
 
@@ -700,4 +724,12 @@ main {
     .hero-animation {
         transform: scale(1.6);
     }
+
+    /* Works Brands */
+    .light-color-container:hover {
+        background: linear-gradient(90deg in hsl longer hue, red, blue);
+        background-size: 150% 100%;
+        animation: moveLineColor 3s linear infinite alternate;
+    }
+
 }
