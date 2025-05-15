@@ -1,0 +1,166 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: var(--transition);
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(66, 133, 244, 0.2);
+}
+
+input:invalid,
+textarea:invalid {
+    border-color: var(--error-color);
+}
+
+input:valid,
+textarea:valid {
+    border-color: #ddd;
+}
+
+input:focus:invalid,
+textarea:focus:invalid {
+    box-shadow: 0 0 0 2px rgba(234, 67, 53, 0.2);
+}
+
+.error-message {
+    color: var(--error-color);
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+}
+
+input:invalid+.error-message,
+textarea:invalid+.error-message {
+    display: block;
+}
+
+.btnSubmit {
+    background-color: var(--);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: var(--transition);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btnSubmit:hover {
+    background-color: #3367d6;
+    transform: translateY(-2px);
+}
+
+.btnSubmit:active {
+    transform: translateY(0);
+}
+
+/* Animações */
+input,
+textarea,
+.btnSubmit {
+    transform: translateY(0);
+    transition: var(--transition);
+}
+
+input:focus,
+textarea:focus {
+    transform: translateY(-2px);
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    input,
+    textarea {
+        padding: 10px;
+    }
+}
+
+/* Modal Confirmação de enviar Formulário para WhatsApp */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.modal-actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.modal-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.modal-btn-confirm {
+    background-color: #25D366;
+    color: white;
+}
+
+.modal-btn-cancel {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+.modal-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}

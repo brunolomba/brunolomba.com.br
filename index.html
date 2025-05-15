@@ -28,16 +28,18 @@
     <meta property='og:locale' content='pt_BR'>
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel='preconnect' href='https://fonts.googleapis.com'>
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
-        rel="stylesheet">
+        href='https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap'
+        rel='stylesheet'>
 
     <!-- Font Awesome para ícones -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'>
+
     <!-- Css -->
-    <link rel='stylesheet' href='styles.css'>
+    <link rel='stylesheet' href='./css/global.css'>
+    <link rel='stylesheet' href='./css/components/form.css'>
 </head>
 
 <body>
@@ -46,6 +48,7 @@
         <div class='up'></div>
         <div class='down'></div>
     </div>
+
     <!-- Logo -->
     <header>
         <div class='header-container'>
@@ -76,22 +79,24 @@
                 </li>
             </ul>
             <section class='areas__container'>
-                <span class='areas-text color-tecnologia'>Tecnologia</span>
-                <span class='areas-text'> + </span>
-                <span class='areas-text color-design'>Design</span>
-                <span class='areas-text'> + </span>
-                <span class='areas-text color-publicidade'>Publicidade</span>
-                <span class='areas-text'> + </span>
-                <span class='areas-text color-marketing'>Marketing</span>
+                <span class='areas-text color-tecnologia'>TECNOLOGIA</span>
+                <span class='areas-text'> | </span>
+                <span class='areas-text color-design'>DESIGN</span>
+                <span class='areas-text'> | </span>
+                <span class='areas-text color-publicidade'>PUBLICIDADE</span>
+                <span class='areas-text'> | </span>
+                <span class='areas-text color-marketing'>MARKETING</span>
             </section>
         </nav>
-        <div class='footer-contact-fixed'>
+
+        <!-- WhatsApp Fixed -->
+        <div class='whatsapp-fixed'>
             <!-- Animated Colorful Line -->
             <div class='line-color'></div>
 
-            <!-- Contact Bar -->
-            <div id='contact-bar'>
-                <span class='contact-text'>Fale comigo no</span>
+            <!-- WhatsApp Bar -->
+            <div class='whatsapp-bar'>
+                <span class='whatsapp-text'>Fale comigo no</span>
                 <a href='https://api.whatsapp.com/send/?phone=5511952193890&text=Ol%C3%A1+Bruno%21+Gostaria+de+solicitar+um+or%C3%A7amento.+Encontrei+seu+site+e+estou+interessado+nos+seus+servi%C3%A7os.&type=phone_number&app_absent=0'
                     target='_blank' class='btn-whatsapp'>
                     WhatsApp
@@ -104,23 +109,25 @@
             </div>
 
             <!-- Copyright -->
-            <div class='footer-copyright-container'>
-                <p class='footer-copyright'>&copy; 2025 | brunolomba.com.br</p>
+            <div class='copyright-container'>
+                <p class='copyright'>&copy; 2025 | brunolomba.com.br</p>
             </div>
         </div>
     </header>
 
-    <main id='main'>
-        <section id='hero'>
+    <main>
+        <!-- Hero -->
+        <section class='hero'>
             <div class='hero-info__container'>
                 <!-- Hero Areas -->
-                <!-- <div class='hero-areas'>Tecnologia | Design | Publicidade | Marketing</div> -->
+                <!-- <div class='hero-areas'>Soluções integradas com base na realidade do seu negócio</div> -->
 
                 <!-- Hero Title -->
                 <h1 class='hero-title'>Transformando ideias em experiências digitais</h1>
 
                 <!-- Hero Text -->
-                <div class='hero-text'>Soluções criativas e funcionais para sua marca se destacar no ambiente digital.
+                <div class='hero-text'>Soluções criativas e funcionais para sua marca se destacar no ambiente
+                    digital.
                     Desenvolvimento web, design UI/UX e estratégias de marketing que geram resultados. Soluções
                     criativas e funcionais para sua marca se destacar no ambiente digital.
                     Desenvolvimento web, design UI/UX e estratégias de marketing que geram resultados.
@@ -135,71 +142,49 @@
                 </div>
             </div>
 
-            <!-- Hero Imgage -->
-            <div class='hero-img__container'>
-
-                <!-- Hero Animation -->
-                <div class='hero-animation__container'>
-                    <dotlottie-player src='https://lottie.host/19e24b6d-3660-4ef5-a82e-f7d569bd633a/Xc1TSR4c4m.lottie'
-                        background='transparent' speed='1' class='hero-animation' loop autoplay>
-                    </dotlottie-player>
-                </div>
-
-                <!-- Highlights -->
-                <div class='hero-highlights__container'>
-                    <div class='highlights__container border-tecnologia'>
-                        <svg class='projects-done__icon-check fill-tecnologia' xmlns='http://www.w3.org/2000/svg'
-                            viewBox='0 0 448 512'>
-                            <path
-                                d='M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z' />
-                        </svg>
-                        <div class='projetcs-done__texts'>
-                            <p class='projets-done__title color-tecnologia'>Em tecnologia trabalhei para grandes
-                                empresas de Ecommerce
-                            </p>
-                            <p class='projets-done__text'>Clientes Satisfeitos</p>
-                        </div>
-                    </div>
-                    <div class='highlights__container border-design'>
-                        <svg class='projects-done__icon-check fill-design' xmlns='http://www.w3.org/2000/svg'
-                            viewBox='0 0 448 512'>
-                            <path
-                                d='M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z' />
-                        </svg>
-                        <div class='projetcs-done__texts'>
-                            <p class='projets-done__title color-design'>+17 Anos de Experiência com <br> Design |
-                                Direção de
-                                Arte
-                            </p>
-                            <p class='projets-done__text'>Clientes Satisfeitos</p>
-                        </div>
-                    </div>
-                    <div class='highlights__container border-publicidade'>
-                        <svg class='projects-done__icon-check fill-publicidade' xmlns='http://www.w3.org/2000/svg'
-                            viewBox='0 0 448 512'>
-                            <path
-                                d='M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z' />
-                        </svg>
-                        <div class='projetcs-done__texts'>
-                            <p class='projets-done__title color-publicidade'>Formado em Publicidade e Propagande
-                            </p>
-                            <p class='projets-done__text'>Clientes Satisfeitos</p>
-                        </div>
-                    </div>
-                    <div class='highlights__container border-marketing'>
-                        <svg class='projects-done__icon-check fill-marketing' xmlns='http://www.w3.org/2000/svg'
-                            viewBox='0 0 448 512'>
-                            <path
-                                d='M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z' />
-                        </svg>
-                        <div class='projetcs-done__texts'>
-                            <p class='projets-done__title color-marketing'>Marketing aplicado na prática</p>
-                            <p class='projets-done__text'>Clientes Satisfeitos</p>
-                        </div>
-                    </div>
-                </div class='hero-highlights__container'>
+            <!-- Hero Imgage or Animation -->
+            <div class='hero-animation__container'>
+                <dotlottie-player src='https://lottie.host/19e24b6d-3660-4ef5-a82e-f7d569bd633a/Xc1TSR4c4m.lottie'
+                    background='transparent' speed='1' class='hero-animation' loop autoplay>
+                </dotlottie-player>
             </div>
-
+            <!-- Highlights -->
+            <div class='hero-highlights__container'>
+                <div class='highlights__container border-tecnologia'>
+                    <svg class='projects-done__icon-check fill-tecnologia' xmlns='http://www.w3.org/2000/svg'
+                        viewBox='0 0 448 512'>
+                        <path
+                            d='M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z' />
+                    </svg>
+                    <p class='projects-done__texts color-tecnologia'>Em tecnologia trabalhei para grandes empresas de
+                        Ecommerce deixar um pouco maior</p>
+                </div>
+                <div class='highlights__container border-design'>
+                    <svg class='projects-done__icon-check fill-design' xmlns='http://www.w3.org/2000/svg'
+                        viewBox='0 0 448 512'>
+                        <path
+                            d='M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z' />
+                    </svg>
+                    <p class='projects-done__texts color-design'>+17 Anos de Experiência com Design | Direção de Arte
+                    </p>
+                </div>
+                <div class='highlights__container border-publicidade'>
+                    <svg class='projects-done__icon-check fill-publicidade' xmlns='http://www.w3.org/2000/svg'
+                        viewBox='0 0 448 512'>
+                        <path
+                            d='M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z' />
+                    </svg>
+                    <p class='projects-done__texts color-publicidade'>Formado em Publicidade e Propaganda</p>
+                </div>
+                <div class='highlights__container border-marketing'>
+                    <svg class='projects-done__icon-check fill-marketing' xmlns='http://www.w3.org/2000/svg'
+                        viewBox='0 0 448 512'>
+                        <path
+                            d='M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z' />
+                    </svg>
+                    <p class='projects-done__texts color-marketing'>Marketing aplicado na prática</p>
+                </div>
+            </div>
         </section>
 
         <!-- Intro -->
@@ -213,192 +198,267 @@
             </p>
         </section>
 
-        <section class="works">
-            <h2 class="works__title">Clientes &nbsp &nbsp | &nbsp &nbsp Empresas &nbsp &nbsp | &nbsp &nbsp Projetos
-                &nbsp &nbsp | &nbsp &nbsp XP</h2>
-            <div class="works__container">
+        <!-- Works -->
+        <section class='works'>
+            <h2 class='works__title'>eXPeriência</h2>
+
+            <h3 class='works__subtitle'>Clientes &nbsp &nbsp | &nbsp &nbsp Empresas &nbsp &nbsp | &nbsp &nbsp Projetos
+            </h3>
+            <div class='works__container'>
                 <div class='light-color-container'>
-                    <img src="./assets/images/works/logo-electrolux.png" alt="Logo Electrolux" class="works__item" />
+                    <img src='./assets/images/works/logo-electrolux.png' alt='Logo Electrolux' class='works__item' />
                 </div>
                 <div class='light-color-container'>
-                    <img src="./assets/images/works/logo-sicredi.png" alt="Logo Sicredi" class="works__item" />
+                    <img src='./assets/images/works/logo-sicredi.png' alt='Logo Sicredi' class='works__item' />
                 </div>
                 <div class='light-color-container'>
-                    <img src="./assets/images/works/logo-picpay.png" alt="Logo PicPay" class="works__item" />
+                    <img src='./assets/images/works/logo-picpay.png' alt='Logo PicPay' class='works__item' />
                 </div>
                 <div class='light-color-container'>
-                    <img src="./assets/images/works/logo-paguemenos.png" alt="Logo Pague Menos" class="works__item" />
+                    <img src='./assets/images/works/logo-paguemenos.png' alt='Logo Pague Menos' class='works__item' />
                 </div>
                 <div class='light-color-container'>
-                    <img src="./assets/images/works/logo-acct.png" alt="Logo ACCT" class="works__item">
+                    <img src='./assets/images/works/logo-acct.png' alt='Logo ACCT' class='works__item'>
                 </div>
                 <div class='light-color-container'>
-                    <img src="./assets/images/works/logo-quality.png" alt="Logo Quality Digital" class="works__item">
+                    <img src='./assets/images/works/logo-quality.png' alt='Logo Quality Digital' class='works__item'>
                 </div>
                 <div class='light-color-container'>
-                    <img src="./assets/images/works/logo-obramax.png" alt="Logo Obramax" class="works__item">
+                    <img src='./assets/images/works/logo-obramax.png' alt='Logo Obramax' class='works__item'>
                 </div>
             </div>
         </section>
 
-        <section class="knowledge d-none">
+        <!-- Knowledge -->
+        <section class='knowledge d-none'>
             <!-- Font Awesome Resolver ou remover -->
-            <h2 class="knowledge__title">Conhecimento</h2>
-            <h3 class="tecnologia">Tecnologia</h3>
-            <div class="tech-grid">
+            <h2 class='knowledge__title'>Conhecimento</h2>
+            <h3 class='tecnologia'>Tecnologia</h3>
+            <div class='tech-grid'>
                 <!-- HTML5 -->
-                <div class="tech-item">
-                    <div class="tech-icon html5">
-                        <i class="fab fa-html5"></i>
+                <div class='tech-item'>
+                    <div class='tech-icon html5'>
+                        <i class='fab fa-html5'></i>
                     </div>
-                    <div class="tech-name">HTML5</div>
+                    <div class='tech-name'>HTML5</div>
                 </div>
 
                 <!-- CSS3 -->
-                <div class="tech-item">
-                    <div class="tech-icon css3">
-                        <i class="fab fa-css3-alt"></i>
+                <div class='tech-item'>
+                    <div class='tech-icon css3'>
+                        <i class='fab fa-css3-alt'></i>
                     </div>
-                    <div class="tech-name">CSS3</div>
+                    <div class='tech-name'>CSS3</div>
                 </div>
 
                 <!-- JavaScript -->
-                <div class="tech-item">
-                    <div class="tech-icon javascript">
-                        <i class="fab fa-js"></i>
+                <div class='tech-item'>
+                    <div class='tech-icon javascript'>
+                        <i class='fab fa-js'></i>
                     </div>
-                    <div class="tech-name">JavaScript</div>
+                    <div class='tech-name'>JavaScript</div>
                 </div>
 
                 <!-- Bootstrap -->
-                <div class="tech-item">
-                    <div class="tech-icon bootstrap">
-                        <i class="fab fa-bootstrap"></i>
+                <div class='tech-item'>
+                    <div class='tech-icon bootstrap'>
+                        <i class='fab fa-bootstrap'></i>
                     </div>
-                    <div class="tech-name">Bootstrap</div>
+                    <div class='tech-name'>Bootstrap</div>
                 </div>
 
                 <!-- Tailwind -->
-                <div class="tech-item">
-                    <div class="tech-icon tailwind">
-                        <i class="fas fa-wind"></i>
+                <div class='tech-item'>
+                    <div class='tech-icon tailwind'>
+                        <i class='fas fa-wind'></i>
                     </div>
-                    <div class="tech-name">Tailwind</div>
+                    <div class='tech-name'>Tailwind</div>
                 </div>
 
                 <!-- React -->
-                <div class="tech-item">
-                    <div class="tech-icon react">
-                        <i class="fab fa-react"></i>
+                <div class='tech-item'>
+                    <div class='tech-icon react'>
+                        <i class='fab fa-react'></i>
                     </div>
-                    <div class="tech-name">React</div>
+                    <div class='tech-name'>React</div>
                 </div>
 
                 <!-- Git -->
-                <div class="tech-item">
-                    <div class="tech-icon git">
-                        <i class="fab fa-git-alt"></i>
+                <div class='tech-item'>
+                    <div class='tech-icon git'>
+                        <i class='fab fa-git-alt'></i>
                     </div>
-                    <div class="tech-name">Git</div>
+                    <div class='tech-name'>Git</div>
                 </div>
 
                 <!-- SASS -->
-                <div class="tech-item">
-                    <div class="tech-icon sass">
-                        <i class="fab fa-sass"></i>
+                <div class='tech-item'>
+                    <div class='tech-icon sass'>
+                        <i class='fab fa-sass'></i>
                     </div>
-                    <div class="tech-name">SASS</div>
+                    <div class='tech-name'>SASS</div>
                 </div>
 
                 <!-- Wix -->
-                <div class="tech-item">
-                    <div class="tech-icon wix">
-                        <i class="fas fa-globe"></i>
+                <div class='tech-item'>
+                    <div class='tech-icon wix'>
+                        <i class='fas fa-globe'></i>
                     </div>
-                    <div class="tech-name">Wix</div>
+                    <div class='tech-name'>Wix</div>
                 </div>
 
                 <!-- VS Code -->
-                <div class="tech-item">
-                    <div class="tech-icon vscode">
-                        <i class="fas fa-code"></i>
+                <div class='tech-item'>
+                    <div class='tech-icon vscode'>
+                        <i class='fas fa-code'></i>
                     </div>
-                    <div class="tech-name">VS Code</div>
+                    <div class='tech-name'>VS Code</div>
                 </div>
             </div>
-            <h3 class="tecnologia">Design</h3>
-            <div class="tech-grid">
+            <h3 class='tecnologia'>Design</h3>
+            <div class='tech-grid'>
                 <!-- Photoshop -->
-                <div class="tech-item">
-                    <div class="tech-icon photoshop">
-                        <i class="fab fa-adobe"></i>
+                <div class='tech-item'>
+                    <div class='tech-icon photoshop'>
+                        <i class='fab fa-adobe'></i>
                     </div>
-                    <div class="tech-name">Photoshop</div>
+                    <div class='tech-name'>Photoshop</div>
                 </div>
 
                 <!-- Illustrator -->
-                <div class="tech-item">
-                    <div class="tech-icon illustrator">
-                        <i class="fas fa-pen-fancy"></i>
+                <div class='tech-item'>
+                    <div class='tech-icon illustrator'>
+                        <i class='fas fa-pen-fancy'></i>
                     </div>
-                    <div class="tech-name">Illustrator</div>
+                    <div class='tech-name'>Illustrator</div>
                 </div>
 
                 <!-- InDesign -->
-                <div class="tech-item">
-                    <div class="tech-icon indesign">
-                        <i class="fas fa-book-open"></i>
+                <div class='tech-item'>
+                    <div class='tech-icon indesign'>
+                        <i class='fas fa-book-open'></i>
                     </div>
-                    <div class="tech-name">InDesign</div>
+                    <div class='tech-name'>InDesign</div>
                 </div>
 
                 <!-- Figma -->
-                <div class="tech-item">
-                    <div class="tech-icon figma">
-                        <i class="fab fa-figma"></i>
+                <div class='tech-item'>
+                    <div class='tech-icon figma'>
+                        <i class='fab fa-figma'></i>
                     </div>
-                    <div class="tech-name">Figma</div>
+                    <div class='tech-name'>Figma</div>
                 </div>
             </div>
-            <h3 class="tecnologia">Projeto e Processos</h3>
-            <div class="tech-grid">
+            <h3 class='tecnologia'>Projeto e Processos</h3>
+            <div class='tech-grid'>
                 <!-- Notion -->
-                <div class="tech-item">
-                    <div class="tech-icon notion">
-                        <i class="fas fa-book"></i>
+                <div class='tech-item'>
+                    <div class='tech-icon notion'>
+                        <i class='fas fa-book'></i>
                     </div>
-                    <div class="tech-name">Notion</div>
+                    <div class='tech-name'>Notion</div>
                 </div>
 
                 <!-- JIRA -->
-                <div class="tech-item">
-                    <div class="tech-icon jira">
-                        <i class="fab fa-jira"></i>
+                <div class='tech-item'>
+                    <div class='tech-icon jira'>
+                        <i class='fab fa-jira'></i>
                     </div>
-                    <div class="tech-name">JIRA</div>
+                    <div class='tech-name'>JIRA</div>
                 </div>
 
                 <!-- ClickUp -->
-                <div class="tech-item">
-                    <div class="tech-icon clickup">
-                        <i class="fas fa-tasks"></i>
+                <div class='tech-item'>
+                    <div class='tech-icon clickup'>
+                        <i class='fas fa-tasks'></i>
                     </div>
-                    <div class="tech-name">ClickUp</div>
+                    <div class='tech-name'>ClickUp</div>
                 </div>
 
                 <!-- Gitflow -->
-                <div class="tech-item">
-                    <div class="tech-icon gitflow">
-                        <i class="fab fa-git-alt"></i>
+                <div class='tech-item'>
+                    <div class='tech-icon gitflow'>
+                        <i class='fab fa-git-alt'></i>
                     </div>
-                    <div class="tech-name">Gitflow</div>
+                    <div class='tech-name'>Gitflow</div>
                 </div>
             </div>
 
         </section>
+
+        <!-- Services -->
+        <section class='services'>
+            <h2 class='services__title'>Serviços</h2>
+            <div class='services__container'>
+                <div class='services__item'>Criação de Websites</div>
+                <div class='services__item'>Otimização de performance</div>
+                <div class='services__item'>Criação de Marca - Branding</div>
+                <div class='services__item'>Aplicação de SEO Avançado</div>
+                <div class='services__item'>Criação de interfaces UI/UX</div>
+                <div class='services__item'>Design Gráfico</div>
+                <div class='services__item'>Campanhas personalizadas</div>
+                <div class='services__item'>Manutenção de Sites</div>
+                <div class='services__item'>Automações ?</div>
+            </div>
+        </section>
     </main>
 
-    <footer id='footer'></footer>
+    <footer>
+        <section class='contact__container'>
+            <h2 class='contact__title'>Contato</h2>
+            <div id="contactForm">
+                <div class="form-group">
+                    <label for="name">Nome Completo</label>
+                    <input type="text" id="name" name="name" placeholder="Digite seu nome completo" minlength="3"
+                        pattern="[A-Za-zÀ-ú\s]{3,}">
+                    <span class="error-message">Por favor, insira um nome válido (mínimo 3 caracteres)</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                    <span class="error-message">Por favor, insira um e-mail válido</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Telefone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Digite seu telefone (DDD) 9XXXX-XXXX"
+                        title="Formato: (DDD) 9XXXX-XXXX">
+                    <span class="error-message">Por favor, insira um telefone válido no formato (DDD) 9XXXX-XXXX</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Digite sua mensagem"
+                        minlength="10"></textarea>
+                    <span class="error-message">Por favor, insira uma mensagem com pelo menos 10 caracteres</span>
+                </div>
+
+                <a id="btnSubmit" target='_blank' class='btn-btnSubmit'>Enviar Mensagem para o WhatsApp</a>
+            </div>
+
+            <!-- Modal de confirmação -->
+            <div id="confirmationModal" class="modal">
+                <div class="modal-content">
+                    <h2>Confirmação de Envio</h2>
+                    <p>Você será redirecionado para o WhatsApp para enviar sua mensagem. Clique em "Enviar" para
+                        confirmar.</p>
+                    <div class="modal-actions">
+                        <button class="modal-btn modal-btn-confirm" id="confirmSend">Enviar</button>
+                        <button class="modal-btn modal-btn-cancel" id="cancelSend">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+            <div class='socialmedia__container'>
+                <h3 class='socialmedia__title'>Redes sociais</h3>
+                <i class='fa-brands fa-linkedin-in'></i>
+                <i class='fa-brands fa-square-github'></i>
+                <i class='fa-brands fa-google'></i>
+
+            </div>
+        </section>
+    </footer>
 
     <!-- Scripts -->
     <script defer src='script.js'></script>
