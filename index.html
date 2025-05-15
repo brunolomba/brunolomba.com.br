@@ -62,7 +62,7 @@
         <div class='line-color line-top'></div>
 
         <!-- Navigation -->
-        <nav class='nav'>
+        <nav class='nav d-none'>
             <img src='./assets/images/perfil.jpeg' alt='' class='perfil-img'>
             <ul class='nav-list'>
                 <li class='nav-item'>
@@ -404,54 +404,45 @@
     </main>
 
     <footer>
-        <section class='contact__container'>
+        <section class='contact'>
             <h2 class='contact__title'>Contato</h2>
-            <div id="contactForm">
-                <div class="form-group">
-                    <label for="name">Nome Completo</label>
-                    <input type="text" id="name" name="name" placeholder="Digite seu nome completo" minlength="3"
-                        pattern="[A-Za-zÀ-ú\s]{3,}">
-                    <span class="error-message">Por favor, insira um nome válido (mínimo 3 caracteres)</span>
+            <!-- Form -->
+            <div class='form__container'>
+                <h3 class='form__title'>Formulário</h3>
+                <div class='form-group'>
+                    <label for='name'>Nome Completo</label>
+                    <input type='text' id='name' name='name' placeholder='Digite seu nome completo' minlength='3'
+                        pattern='[A-Za-zÀ-ú\s]{3,}'>
+                    <span class='error-message'>Por favor, insira um nome válido (mínimo 3 caracteres)</span>
                 </div>
 
-                <div class="form-group">
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail"
-                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-                    <span class="error-message">Por favor, insira um e-mail válido</span>
+                <div class='form-group'>
+                    <label for='email'>E-mail</label>
+                    <input type='email' id='email' name='email' placeholder='Digite seu e-mail'
+                        pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$'>
+                    <span class='error-message'>Por favor, insira um e-mail válido</span>
                 </div>
 
-                <div class="form-group">
-                    <label for="phone">Telefone</label>
-                    <input type="tel" id="phone" name="phone" placeholder="Digite seu telefone (DDD) 9XXXX-XXXX"
-                        title="Formato: (DDD) 9XXXX-XXXX">
-                    <span class="error-message">Por favor, insira um telefone válido no formato (DDD) 9XXXX-XXXX</span>
+                <div class='form-group'>
+                    <label for='phone'>Telefone</label>
+                    <input type='tel' id='phone' name='phone' placeholder='Digite seu telefone (DDD) 9XXXX-XXXX'
+                        pattern='\(\d{2}\) \d{4,5}-\d{4}' maxlength='16' title='Formato: (DDD) 9XXXX-XXXX'>
+                    <span class='error-message'>Por favor, insira um telefone válido no formato (DDD) 9XXXX-XXXX</span>
                 </div>
 
-                <div class="form-group">
-                    <label for="message">Mensagem</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Digite sua mensagem"
-                        minlength="10"></textarea>
-                    <span class="error-message">Por favor, insira uma mensagem com pelo menos 10 caracteres</span>
+                <div class='form-group'>
+                    <label for='message'>Mensagem</label>
+                    <textarea id='message' name='message' rows='5' placeholder='Digite sua mensagem'
+                        minlength='10'></textarea>
+                    <span class='error-message'>Por favor, insira uma mensagem com pelo menos 10 caracteres</span>
                 </div>
 
-                <a id="btnSubmit" target='_blank' class='btn-btnSubmit'>Enviar Mensagem para o WhatsApp</a>
+                <a id='btnSubmit' target='_blank' class='btn-btnSubmit'>Enviar Mensagem para o WhatsApp</a>
             </div>
 
-            <!-- Modal de confirmação -->
-            <div id="confirmationModal" class="modal">
-                <div class="modal-content">
-                    <h2>Confirmação de Envio</h2>
-                    <p>Você será redirecionado para o WhatsApp para enviar sua mensagem. Clique em "Enviar" para
-                        confirmar.</p>
-                    <div class="modal-actions">
-                        <button class="modal-btn modal-btn-confirm" id="confirmSend">Enviar</button>
-                        <button class="modal-btn modal-btn-cancel" id="cancelSend">Cancelar</button>
-                    </div>
-                </div>
-            </div>
+            <!-- Social Medias Professionals -->
             <div class='socialmedia__container'>
-                <h3 class='socialmedia__title'>Redes sociais</h3>
+                <h3 class='socialmedia__title'>Redes profissionais</h3>
                 <i class='fa-brands fa-linkedin-in'></i>
                 <i class='fa-brands fa-square-github'></i>
                 <i class='fa-brands fa-google'></i>
@@ -459,6 +450,19 @@
             </div>
         </section>
     </footer>
+
+    <!-- Modal de confirmação -->
+    <div id='confirmationModal' class='modal'>
+        <div class='modal-content'>
+            <h2>Confirmação de Envio</h2>
+            <p>Você será redirecionado para o WhatsApp para enviar sua mensagem. Clique em 'Enviar' para
+                confirmar.</p>
+            <div class='modal-actions'>
+                <button class='modal-btn modal-btn-confirm' id='confirmSend'>Enviar</button>
+                <button class='modal-btn modal-btn-cancel' id='cancelSend'>Cancelar</button>
+            </div>
+        </div>
+    </div>
 
     <!-- Scripts -->
     <script defer src='script.js'></script>

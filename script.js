@@ -115,6 +115,66 @@ elements.confirmSend.addEventListener('click', () => {
 // Cancelar: Fecha modal
 elements.cancelSend.addEventListener('click', () => toggleModal(false));
 
+// Máscara para telefone
+const phoneInput = document.getElementById('phone');
+let lastValidValue = '';
+
+phoneInput.addEventListener('input', function(e) {
+    // Remove caracteres não numéricos
+    let value = e.target.value.replace(/\D/g, '');
+    
+    // Limita a 11 dígitos (DDD + 9 números)
+    value = value.substring(0, 11);
+    
+    // Formatação condicional
+    let formattedValue = value;
+    if (value.length > 0) formattedValue = `(${value.substring(0, 2)}`;
+    if (value.length > 2) formattedValue += `) ${value.substring(2, 3)}`;
+    if (value.length > 3) formattedValue += ` ${value.substring(3, 7)}`;
+    if (value.length > 7) formattedValue += `-${value.substring(7)}`;
+    
+    // Só atualiza se mudou (evita loop)
+    if (formattedValue !== lastValidValue) {
+        e.target.value = formattedValue;
+        lastValidValue = formattedValue;
+        
+    }
+});
+
+// Validação extra no blur (opcional)
+phoneInput.addEventListener('blur', function() {
+    if (!this.checkValidity()) {
+        this.setCustomValidity('Use o formato: (DDD) 9 XXXX-XXXX');
+    } else {
+        this.setCustomValidity('');
+    }
+});
+
+// document.getElementById('phone').addEventListener('input', (e) => {
+//     let value = e.target.value.replace(/\D/g, '');
+//     value = value.substring(0, 11); // Limita a 11 dígitos (DDD + 9 dígitos)
+
+//     // Formatação progressiva
+//     if (value.length > 0) value = `(${value.substring(0, 2)}`;
+//     if (value.length > 3) value = `${value}) ${value.substring(3, 4)}`;
+//     if (value.length > 6) value = `${value} ${value.substring(6, 10)}`;
+//     if (value.length > 11) value = `${value}-${value.substring(11, 15)}`;
+
+//     e.target.value = value;
+// });
+
+// // Validação no envio (opcional)
+// function validateForm() {
+//     const phone = document.getElementById('phone').value;
+//     const isValid = /\(\d{2}\) \d \d{4}-\d{4}/.test(phone);
+    
+//     if (!isValid) {
+//         alert("Telefone inválido! Use o formato (DDD) 9 XXXX-XXXX.");
+//         return false;
+//     }
+//     return true;
+// }
+
 // document.addEventListener('DOMContentLoaded', function () {
 //   const form = document.getElementById('contactForm');
 //   const whatsappBtn = document.querySelector('.btn-whatsapp');

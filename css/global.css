@@ -385,7 +385,7 @@ main {
 .hero-highlights__container,
 .works,
 .services,
-.contact__container {
+.contact {
     padding: 10vh 5vh 10vh;
 }
 
@@ -430,7 +430,6 @@ body {
 .hero-info__container {
     display: flex;
     flex-direction: column;
-    padding-top: 5vh;
     gap: 40px
 }
 
@@ -571,6 +570,7 @@ body {
 /* Works Brands*/
 .works {
     display: flex;
+    align-items: center;
     flex-direction: column;
     background-color: var(--secondary-background-color);
 }
@@ -618,6 +618,7 @@ body {
 /* Services */
 .services {
     display: flex;
+    align-items: center;
     flex-direction: column;
 }
 
@@ -648,12 +649,11 @@ footer {
     background-color: var(--primary-color);
 }
 
-.contact__container {
+.contact {
     display: flex;
+    align-items: center;
     flex-direction: column;
 }
-
-.form__container {}
 
 .socialmedia__container {
     display: flex;
@@ -813,7 +813,9 @@ footer {
 
     /* Max-Width */
     .hero,
-    .works__container {
+    .works__container,
+    .services__container,
+    .contactForm {
         max-width: 1200px;
     }
 
