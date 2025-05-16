@@ -69,3 +69,8 @@ textarea:invalid:focus+.tip-message {
     left: 0;
     display: inline;
 }
+
+input:hover,
+textarea:hover {
+    box-shadow: 0 0 3px 1px rgb(255, 255, 255, 0.3);
+}

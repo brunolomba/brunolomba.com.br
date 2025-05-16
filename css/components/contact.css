@@ -5,6 +5,10 @@
     flex-direction: column;
 }
 
+.contact__container {
+    gap: 50px;
+}
+
 /* CTA Form */
 .cta-form__title {
     text-align: left;

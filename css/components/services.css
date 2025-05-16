@@ -26,3 +26,7 @@
     background-color: var(--secondary-background-color);
     font-size: var(--font-size-large);
 }
+
+.services__item:hover {
+    border: 1px solid var(--green);
+}
