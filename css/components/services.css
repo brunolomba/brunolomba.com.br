@@ -1,0 +1,28 @@
+/* Services */
+.services {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.services__title {
+    text-align: center;
+}
+
+.services__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.services__item {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    border-radius: var(--border);
+    background-color: var(--secondary-background-color);
+    font-size: var(--font-size-large);
+}

@@ -1,0 +1,64 @@
+/* Estruturas bases HTML */
+/* Header */
+header {
+    width: 100%;
+    height: 0;
+    z-index: 100;
+}
+
+.header-container {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px 20px;
+    background: var(--primary-color);
+    z-index: 100;
+}
+
+/* Main */
+main {
+    background-color: var(--primary-background-color);
+    margin-top: 130px;
+}
+
+/* Body */
+body {
+    background: var(--primary-background-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: background 0.5s, color 0.5s;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+}
+
+/* Patterns */
+/* Body Patterns*/
+/* Padding Section */
+.hero-info__container,
+.hero-highlights__container,
+.works,
+.services,
+.contact {
+    padding: 10vh 5vh 10vh;
+}
+
+/* Margin Bottom Section */
+body {
+    margin-bottom: 80px;
+}
+
+/* Containers Patterns */
+.works__container,
+.services__container,
+.form__container,
+.socialmedia__container {
+    padding: 5vh 0 0;
+}

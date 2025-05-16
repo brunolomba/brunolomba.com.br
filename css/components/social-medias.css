@@ -1,0 +1,16 @@
+/* Social Media Profissionals */
+.socialmedia__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.fa-brands {
+    font-size: var(--font-size-large);
+    color: var(--text-color);
+}
+
+.fa-brands:hover {
+    color: var(--yellow);
+}

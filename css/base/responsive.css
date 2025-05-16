@@ -1,0 +1,124 @@
+@media (min-width: 768px) {
+
+    /* Header */
+    .nav__hidden {
+        transform: translateY(calc((-100%) + 133px));
+    }
+
+    /* Areas */
+    .areas__container {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .areas-text {
+        font-size: var(--font-size-large);
+    }
+
+    /* Hero */
+    /* Hero Infos */
+    .hero {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .hero-info__container {
+        width: 100%;
+        gap: 50px;
+    }
+
+    .hero-info__btn {
+        flex-direction: row;
+    }
+
+    .btn-projects,
+    .btn-cta {
+        flex-grow: 1;
+    }
+
+    /* Hero Image */
+    .hero-animation__container {
+        flex-direction: row;
+        display: inline;
+        width: 45%;
+        height: 32vh;
+    }
+
+    .hero-animation {
+        transform: scale(2.7);
+    }
+
+    .hero-highlights__container {
+        padding-top: 0;
+        width: 55%;
+    }
+
+    .contact__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    }
+
+    .cta-form__container,
+    .form__container {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    /* Max-Width Content */
+    .hero,
+    .works__container,
+    .services__container,
+    .contact__container {
+        max-width: 1200px;
+    }
+
+    /* Hero */
+    .hero {
+        flex-direction: row;
+        justify-self: center;
+    }
+
+    /* Hero Infos */
+    .hero-info__container {
+        width: 60%;
+    }
+
+    /* Hero Image */
+    .hero-animation__container {
+        width: 40%;
+        height: 50vh;
+    }
+
+    .hero-animation {
+        transform: scale(2.8);
+    }
+
+    /* Hero Highlights */
+    .hero-highlights__container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .highlights__container {
+        width: 40%;
+        flex-grow: 1;
+    }
+
+    /* Works Brands */
+    .works__container {
+        gap: 20px;
+    }
+
+    .light-color-container:hover {
+        background: linear-gradient(90deg in hsl longer hue, red, blue);
+        background-size: 150% 100%;
+        animation: moveLineColor 3s linear infinite alternate;
+    }
+}

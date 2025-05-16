@@ -1,0 +1,11 @@
+/* Contact */
+.contact {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* CTA Form */
+.cta-form__title {
+    text-align: left;
+}

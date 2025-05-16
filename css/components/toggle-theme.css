@@ -1,0 +1,22 @@
+/* Toggle Theme */
+#toggle-theme {
+    width: 18px;
+    height: 18px;
+    margin-right: 40px;
+    font-size: var(--font-size-small);
+    font-weight: 500;
+    text-indent: 27px;
+    color: var(--text-color);
+    border-radius: var(--border-100);
+    cursor: pointer;
+}
+
+[data-theme='dark'] #toggle-theme {
+    background-color: var(--primary-color);
+    border: 2px solid var(--secondary-color);
+}
+
+[data-theme='light'] #toggle-theme {
+    background-color: var(--yellow);
+    border: 2px solid var(--primary-color);
+}

@@ -1,0 +1,19 @@
+/* H2 Title*/
+.works__title,
+.services__title,
+.contact__title,
+.form__title,
+.modal__title,
+.cta-form__title {
+    font-size: var(--font-size-titles);
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+/* H3 Title */
+.works__subtitle,
+.socialmedia__title,
+.form__title {
+    font-size: var(--font-size-normal);
+    text-align: center;
+}

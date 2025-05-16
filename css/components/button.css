@@ -1,0 +1,69 @@
+/* Buttons Patterns */
+.btn-projects,
+.btn-cta,
+.btn-whatsapp {
+    padding: 20px 20px;
+    font-size: var(--font-size-normal);
+    color: var(--white);
+    font-weight: 500;
+    text-align: center;
+    border-radius: var(--btn-border);
+}
+
+/* Nav Button */
+.nav-btn {
+    font-size: var(--font-size-small);
+    color: var(--text-color);
+    width: 60px;
+    text-align: end;
+    cursor: pointer;
+}
+
+/* Hero Buttons */
+.hero-info__btn {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.btn-projects {
+    background-color: var(--secondary-color);
+}
+
+.btn-cta {
+    background-color: var(--whatsapp-green-light);
+}
+
+/* WhatsApp Button Fixed */
+.btn-whatsapp {
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: 700;
+    background-color: var(--whatsapp-green-light);
+    margin-left: 10px;
+}
+
+.icon-whatsapp {
+    align-self: flex-end;
+    width: 17px;
+    margin-left: 5px;
+    fill: var(--white);
+}
+
+/* Button Submit */
+.btn-submit {
+    background-color: var(--whatsapp-green);
+    color: white;
+    padding: 15px 20px;
+    font-size: var(--font-size-normal);
+    border-radius: var(--btn-border);
+    cursor: pointer;
+    width: 100%;
+    font-weight: 500;
+    text-align: center;
+}
+
+.btn-submit:hover {
+    background-color: var(--whatsapp-green-light);
+}

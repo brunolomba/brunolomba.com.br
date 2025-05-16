@@ -1,0 +1,56 @@
+/* Tools Extras Remover */
+.d-none {
+    display: none !important;
+}
+
+/* Classes para aplicar no HTML - Estilo bootstrap */
+/* Colors Areas */
+.color-tecnologia {
+    color: var(--green);
+}
+
+.color-design {
+    color: var(--pink);
+}
+
+.color-publicidade {
+    color: var(--yellow);
+}
+
+.color-marketing {
+    color: var(--purple);
+}
+
+/* Borders Colors */
+.border-tecnologia {
+    border: 1px solid var(--green);
+}
+
+.border-design {
+    border: 1px solid var(--pink);
+}
+
+.border-publicidade {
+    border: 1px solid var(--yellow);
+}
+
+.border-marketing {
+    border: 1px solid var(--purple);
+}
+
+/* Preenchimento Colors*/
+.fill-tecnologia {
+    fill: var(--green);
+}
+
+.fill-design {
+    fill: var(--pink);
+}
+
+.fill-publicidade {
+    fill: var(--yellow);
+}
+
+.fill-marketing {
+    fill: var(--purple);
+}

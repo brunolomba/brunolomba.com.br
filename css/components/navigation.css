@@ -1,0 +1,73 @@
+/* Navegation */
+.nav {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding: 80px 0 0;
+    background-color: var(--primary-color);
+    transform: translateY(-80px);
+    transition: transform 3s ease;
+}
+
+.nav__hidden {
+    transform: translateY(calc((-100%) + 128px));
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-item {
+    border-bottom: 1px solid #2e2e2e;
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+[data-theme='light'] .nav-item {
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.nav-item:hover {
+    background-color: #b300ff;
+}
+
+.nav-link {
+    color: var(--text-color);
+    white-space: nowrap;
+    font-size: var(--font-size-normal);
+    transition: color 0.3s;
+}
+
+/* Peril */
+.perfil-img {
+    position: absolute;
+    top: 170px;
+    width: 20vh;
+    height: 20vh;
+    transform: scaleX(-1);
+    border-radius: var(--border);
+}
+
+/* Areas */
+.areas__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    background-color: var(--primary-color);
+}
+
+.areas-text {
+    font-size: var(--font-size-normal);
+}

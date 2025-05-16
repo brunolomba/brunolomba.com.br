@@ -1,0 +1,30 @@
+:root {
+    /* Colors Globals */
+    --white: #fff;
+    --black: #000;
+    --grey-medium: #292929;
+    --green: #00ccaa;
+    --pink: #ff5cb8;
+    --yellow: #ffbb00;
+    --purple: #b300ff;
+    --whatsapp-green: #128C7E;
+    --whatsapp-green-light: #25D366;
+
+    /* Font Family */
+    --font-family: 'Montserrat', sans-serif;
+    --font-family-plus-jakarta: 'Plus Jakarta Sans', sans-serif;
+
+    /* Font size */
+    --font-size-small: 1.2rem;
+    --font-size-normal: 1.5rem;
+    --font-size-large: 2.0rem;
+    --font-size-logo: 2.5rem;
+    --font-size-titles: 4rem;
+
+    /* Borders */
+    --btn-border: 0.5rem;
+    --border: 1rem;
+    --border-100: 100%;
+
+    /* Breakpoints */
+}
