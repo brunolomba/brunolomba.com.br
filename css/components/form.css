@@ -1,10 +1,7 @@
-.container {
-    max-width: 600px;
-    margin: 0 auto;
-    background: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+.form__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .form-group {
@@ -22,92 +19,50 @@ input,
 textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
-    transition: var(--transition);
+    border: 2px solid #ddd;
+    border-radius: var(--btn-border);
+    font-size: var(--font-size-normal);
 }
 
 input:focus,
 textarea:focus {
     outline: none;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 2px rgba(66, 133, 244, 0.2);
 }
 
 input:invalid,
 textarea:invalid {
-    border-color: var(--error-color);
+    border-color: var(--pink);
 }
 
 input:valid,
 textarea:valid {
-    border-color: #ddd;
-}
-
-input:focus:invalid,
-textarea:focus:invalid {
-    box-shadow: 0 0 0 2px rgba(234, 67, 53, 0.2);
+    border: 2px solid var(--green);
 }
 
 .error-message {
-    color: var(--error-color);
-    font-size: 14px;
+    color: var(--pink);
     margin-top: 5px;
     display: none;
 }
 
-input:invalid+.error-message,
-textarea:invalid+.error-message {
+input:invalid:focus+.error-message,
+textarea:invalid:focus+.error-message {
     display: block;
 }
 
-.btnSubmit {
-    background-color: var(--);
+.btn-submit {
+    background-color: var(--whatsapp-green-light);
     color: white;
-    border: none;
-    padding: 12px 24px;
-    font-size: 16px;
-    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: var(--font-size-normal);
+    border-radius: var(--btn-border);
     cursor: pointer;
     width: 100%;
-    transition: var(--transition);
     font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
 }
 
-.btnSubmit:hover {
-    background-color: #3367d6;
-    transform: translateY(-2px);
-}
-
-.btnSubmit:active {
-    transform: translateY(0);
-}
-
-/* Animações */
-input,
-textarea,
-.btnSubmit {
-    transform: translateY(0);
-    transition: var(--transition);
-}
-
-input:focus,
-textarea:focus {
-    transform: translateY(-2px);
-}
-
-@media (max-width: 480px) {
-    .container {
-        padding: 20px;
-    }
-
-    input,
-    textarea {
-        padding: 10px;
-    }
+.btn-submit:hover {
+    background-color: var(--whatsapp-green);
 }
 
 /* Modal Confirmação de enviar Formulário para WhatsApp */

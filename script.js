@@ -71,8 +71,8 @@ const elements = {
 
 function validate() {
     // Regex otimizados
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const phoneRegex = /\(\d{2}\) \d{4,5}-\d{4}/;
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    const phoneRegex = /\(\d{2}\) \d \d{4}-\d{4}/;
 
     return (
         elements.name.value.length >= 3 &&
@@ -123,6 +123,7 @@ phoneInput.addEventListener('input', function(e) {
     // Remove caracteres não numéricos
     let value = e.target.value.replace(/\D/g, '');
     
+    console.log(value);
     // Limita a 11 dígitos (DDD + 9 números)
     value = value.substring(0, 11);
     
@@ -141,12 +142,10 @@ phoneInput.addEventListener('input', function(e) {
     }
 });
 
-// Validação extra no blur (opcional)
-phoneInput.addEventListener('blur', function() {
-    if (!this.checkValidity()) {
-        this.setCustomValidity('Use o formato: (DDD) 9 XXXX-XXXX');
-    } else {
-        this.setCustomValidity('');
+document.getElementById('phone').addEventListener('keydown', function(e) {
+    // Permite apenas: Backspace, Tab, setas e números
+    if (!/[0-9]|Backspace|Tab|ArrowLeft|ArrowRight/.test(e.key)) {
+        e.preventDefault();
     }
 });
 
