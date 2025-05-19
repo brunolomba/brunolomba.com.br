@@ -17,6 +17,7 @@
     width: 60px;
     text-align: end;
     cursor: pointer;
+    visibility: hidden;
 }
 
 /* Hero Buttons */
