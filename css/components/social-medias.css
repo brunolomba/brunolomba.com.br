@@ -11,6 +11,14 @@
     color: var(--text-color);
 }
 
-.fa-brands:hover {
-    color: var(--yellow);
+.fa-linkedin-in:hover {
+    color: #0e76a8;
+}
+
+.fa-square-github:hover {
+    color: #C06EFF;
+}
+
+.fa-google:hover {
+    color: gold;
 }

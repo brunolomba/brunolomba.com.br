@@ -46,8 +46,13 @@ footer {
 .hero-highlights__container,
 .works,
 .services,
-.contact {
+.contact__container,
+.socialmedia__container {
     padding: 10vh 5vh 10vh;
+}
+
+.contact__container {
+    padding-bottom: 0;
 }
 
 /* Margin Bottom Section */
@@ -58,7 +63,6 @@ body {
 /* Containers Patterns */
 .works__container,
 .services__container,
-.form__container,
-.socialmedia__container {
+.form__container {
     padding: 5vh 0 0;
 }

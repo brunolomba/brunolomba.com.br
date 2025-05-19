@@ -1,5 +1,12 @@
 @media (min-width: 768px) {
 
+    /* Max-Width Container */
+    .works__container,
+    .services__container,
+    .contact__container {
+        max-width: 540px;
+    }
+
     /* Header */
     .nav__hidden {
         transform: translateY(calc((-100%) + 133px));
@@ -54,22 +61,17 @@
         width: 55%;
     }
 
-    .contact__container {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        width: 100%;
-    }
-
-    .cta-form__container,
-    .form__container {
-        width: 50%;
+    /* CTA Form Title */
+    .cta-form__title {
+        text-align: left;
+        font-weight: 900;
+        line-height: 4rem;
     }
 }
 
 @media (min-width: 1024px) {
 
-    /* Max-Width Content */
+    /* Max-Width Container */
     .hero,
     .works__container,
     .services__container,
@@ -121,4 +123,18 @@
         background-size: 150% 100%;
         animation: moveLineColor 3s linear infinite alternate;
     }
+
+    /* Contato */
+    .contact__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    }
+
+    .cta-form__container,
+    .form__container {
+        width: 50%;
+    }
+
 }
