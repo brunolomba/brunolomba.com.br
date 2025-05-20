@@ -1,7 +1,6 @@
 /* Logo */
-#logo {
-    font-size: var(--font-size-logo);
-    font-weight: 700;
-    line-height: 35px;
-    white-space: nowrap;
+.logo {
+    width: 170px;
+    height: 35px;
+    fill: var(--text-color);
 }

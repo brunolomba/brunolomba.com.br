@@ -3,8 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 10px;
     /* Trick REM > Pixel */
+    font-size: 10px;
     font-family: var(--font-family-plus-jakarta);
     text-decoration: none;
 }

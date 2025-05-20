@@ -28,13 +28,15 @@
 
 .btn-projects,
 .btn-cta {
-    border: 1px solid white;
-    background-color: rgb(0, 0, 0, 0.2);
+    border: 1px solid var(--text-color);
+    background-color: var(--primary-color);
+    color: var(--text-color);
 }
 
 .btn-projects:hover,
 .btn-cta:hover {
     border: 1px solid transparent;
+    color: white;
 }
 
 .btn-projects:hover {
@@ -73,8 +75,36 @@
     width: 100%;
     font-weight: 500;
     text-align: center;
+    transition: all 0.3s ease;
 }
 
-.btn-submit:hover {
-    background-color: var(--purple);
+.btn-submit:active {
+    opacity: 0.9;
+    transform: scale(0.98);
+}
+
+/* Buttons Modal */
+.modal-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: var(--btn-border);
+    cursor: pointer;
+    font-weight: 500;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.modal-btn-confirm {
+    background-color: var(--green);
+    color: white;
+}
+
+.modal-btn-cancel {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+.modal-btn:active {
+    opacity: 0.9;
+    transform: scale(0.95);
 }
