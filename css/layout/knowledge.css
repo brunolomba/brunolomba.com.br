@@ -1,0 +1,31 @@
+/* Knowledge */
+/* Tecnology Icons */
+.knowledge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.knowledge__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tech-item {
+    display: flex;
+    padding: 20px;
+    width: 95px;
+    /* border-radius: var(--btn-border); */
+    /* background-color: var(--secondary-background-color); */
+    flex-direction: column;
+    align-items: center;
+}
+
+.fab,
+.fas,
+.fa-brands {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}

@@ -19,14 +19,19 @@
 .services__item {
     display: flex;
     justify-content: center;
-    padding: 15px;
+    padding: 20px;
     flex-grow: 1;
-    border: 1px solid #ccc;
+    border: 2px solid transparent;
     border-radius: var(--border);
-    background-color: var(--secondary-background-color);
-    font-size: var(--font-size-large);
+    background-color: var(--primary-background-color);
+    font-size: var(--font-size-normal);
+}
+
+[data-theme='light'] .services__item {
+    color: white;
+    background-color: var(--text-color);
 }
 
 .services__item:hover {
-    border: 1px solid var(--green);
+    border: 2px solid white;
 }

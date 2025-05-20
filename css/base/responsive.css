@@ -1,10 +1,11 @@
 @media (min-width: 768px) {
 
     /* Max-Width Container */
+    .hero-info__container,
     .works__container,
     .services__container,
     .contact__container {
-        max-width: 540px;
+        max-width: 910px;
     }
 
     /* Header */
@@ -31,7 +32,9 @@
     }
 
     .hero-info__container {
+        flex-grow: 1;
         width: 100%;
+        justify-self: center;
         gap: 50px;
     }
 
@@ -49,7 +52,9 @@
         flex-direction: row;
         display: inline;
         width: 45%;
+        flex-grow: 1;
         height: 32vh;
+        padding-top: 0;
     }
 
     .hero-animation {
@@ -58,22 +63,27 @@
 
     .hero-highlights__container {
         padding-top: 0;
-        width: 55%;
+        width: 50%;
+    }
+
+    .tech-item {
+        width: 100px;
     }
 
     /* CTA Form Title */
-    .cta-form__title {
+    .cta-form__title,
+    .cta-form__title span {
         text-align: left;
-        font-weight: 900;
-        line-height: 4rem;
+        font-size: 5rem;
+        line-height: 4.5rem;
     }
+
 }
 
 @media (min-width: 1024px) {
 
-    /* Max-Width Container */
     .hero,
-    .works__container,
+    .knowledge__container,
     .services__container,
     .contact__container {
         max-width: 1200px;
@@ -81,13 +91,14 @@
 
     /* Hero */
     .hero {
-        flex-direction: row;
         justify-self: center;
     }
 
     /* Hero Infos */
     .hero-info__container {
-        width: 60%;
+        width: 55%;
+        align-self: center;
+        margin-bottom: 0;
     }
 
     /* Hero Image */
@@ -115,11 +126,12 @@
 
     /* Works Brands */
     .works__container {
+        max-width: 100%;
         gap: 20px;
     }
 
     .light-color-container:hover {
-        background: linear-gradient(90deg in hsl longer hue, red, blue);
+        background: linear-gradient(90deg in hsl longer hue, white, grey, white);
         background-size: 150% 100%;
         animation: moveLineColor 3s linear infinite alternate;
     }
@@ -132,6 +144,7 @@
         width: 100%;
     }
 
+    /* Form */
     .cta-form__container,
     .form__container {
         width: 50%;

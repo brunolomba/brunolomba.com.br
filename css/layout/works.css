@@ -3,15 +3,6 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: var(--secondary-background-color);
-}
-
-[data-theme='light'] .works {
-    background-color: var(--secondary-color);
-}
-
-[data-theme='light'] .works__title {
-    color: var(--primary-color);
 }
 
 .works__container {
@@ -27,8 +18,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 152px;
-    height: 66px;
+    width: 154px;
+    height: 68px;
     border-radius: var(--btn-border);
 }
 

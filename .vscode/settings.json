@@ -1,0 +1,24 @@
+{
+  // Habilita o ESLint para JS/TS
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  // Define o Prettier como formatador padrão
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // Formata automaticamente ao salvar
+  "editor.formatOnSave": true,
+  // Corrige erros do ESLint ao salvar
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  // Desativa o formatador padrão do VS Code para JS/TS
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

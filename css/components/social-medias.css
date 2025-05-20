@@ -1,13 +1,18 @@
 /* Social Media Profissionals */
 .socialmedia__container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     gap: 20px;
 }
 
-.fa-brands {
-    font-size: var(--font-size-large);
+.container__icons {
+    display: flex;
+    gap: 50px;
+}
+
+.container__icons .fa-brands {
+    font-size: 3rem;
     color: var(--text-color);
 }
 

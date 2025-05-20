@@ -1,48 +1,119 @@
 /* H2 Title*/
 .works__title,
-.form__title,
+.works__title span,
+.knowledge__title,
+.knowledge__title span,
+.services__title,
+.services__title span,
+.cta-form__title,
 .modal__title {
-    font-size: var(--font-size-titles);
+    font-size: 5rem;
+    line-height: 3.7rem;
+    letter-spacing: 2px;
     text-align: center;
     margin-bottom: 5vh;
 }
 
-/* H3 Title */
+/* h2 Title Design */
+.hero-title,
+.knowledge__title,
+.cta-form__title,
+.modal__title {
+    /* Efeito colorido */
+    background: linear-gradient(45deg, var(--green), var(--purple));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.works__title span,
+.knowledge__title span,
+.services__title span,
+.cta-form__title span {
+    font-family: Arial, Helvetica, sans-serif;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--text-color);
+}
+
+.knowledge__title span,
+.cta-form__title span {
+    color: var(--primary-color);
+}
+
+/* Text White color for gradient background */
+.works__title,
+.services__title {
+    color: white;
+}
+
+[data-theme='light'] .works__title span,
+[data-theme='light'] .services__title span {
+    -webkit-text-stroke-color: white;
+}
+
+/* H3 Subtitle */
 .works__subtitle,
+.knowledge__subtitle,
+.services__subtitle,
+.cta-form__text,
 .socialmedia__title {
     font-size: var(--font-size-normal);
+    margin-bottom: 5vh;
+}
+
+/* Title Medias professionals */
+.socialmedia__title {
+    font-size: var(--font-size-large);
+    margin-bottom: 2vh;
+}
+
+/* Knowledge */
+.knowledge__subtitle {
     text-align: center;
 }
 
-/* Works */
-.works__title,
-.works__title span,
-.services__title,
-.services__title span,
-.cta-form__title,
-.cta-form__title span {
-    font-size: 5rem;
-    letter-spacing: 2px;
+/* Icons build with font */
+.icon-photoshop,
+.icon-illustrator,
+.icon-indesign,
+.icon-typescript {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 4rem;
+    margin-bottom: 10px;
 }
 
-.works__title span,
-.services__title span,
-.cta-form__title span {
-    line-height: 5rem;
-    font-family: Arial, Helvetica, sans-serif;
-    -webkit-text-stroke-width: 1px;
-    /* Largura da borda */
-    -webkit-text-stroke-color: white;
-    /* Cor da borda */
-    color: var(--secondary-background-color);
+/* Icons SVG */
+.icon-wix,
+.icon-vscode,
+.icon-notion,
+.icon-clickup {
+    width: 60px;
+    height: 40px;
+    margin-bottom: 10px;
+    filter: invert(100%);
 }
 
+[data-theme='light'] .icon-wix,
+[data-theme='light'] .icon-vscode,
+[data-theme='light'] .icon-notion,
+[data-theme='light'] .icon-clickup {
+    filter: invert(0);
+}
+
+.tech-name {
+    font-size: var(--font-size-small);
+}
+
+/* Form */
 .cta-form__title,
 .cta-form__title span {
     font-size: 4.2rem;
+    line-height: 3.5rem;
+    letter-spacing: 2px;
 }
 
 .cta-form__text {
-    margin-top: 5vh;
     font-size: var(--font-size-large);
 }

@@ -58,58 +58,59 @@ navLink.forEach((link) => {
 //SCRIPT para enviar formulário para o WhatsApp
 // Elementos do formulário
 const elements = {
-    name: document.getElementById('name'),
-    email: document.getElementById('email'),
-    phone: document.getElementById('phone'),
-    message: document.getElementById('message'),
-    btnSubmit: document.getElementById('btnSubmit'),
-    // btnWhatsApp: document.getElementById('btnWhatsApp'),
-    modal: document.getElementById('confirmationModal'),
-    confirmSend: document.getElementById('confirmSend'),
-    cancelSend: document.getElementById('cancelSend')
+  name: document.getElementById('name'),
+  email: document.getElementById('email'),
+  phone: document.getElementById('phone'),
+  message: document.getElementById('message'),
+  btnSubmit: document.getElementById('btnSubmit'),
+  // btnWhatsApp: document.getElementById('btnWhatsApp'),
+  modal: document.getElementById('confirmationModal'),
+  confirmSend: document.getElementById('confirmSend'),
+  cancelSend: document.getElementById('cancelSend'),
 };
 
 function validate() {
-    // Regex otimizados
-    const emailRegex = /^[a-z0-9._%+-]+@[a-z0-9]+\.[a-z]{2,}$/;
-    const phoneRegex = /\(\d{2}\) \d \d{4}-\d{4}/;
+  // Regex otimizados
+  const emailRegex = /^[a-z0-9._%+-]+@[a-z0-9]+\.[a-z]{2,}$/;
+  const phoneRegex = /\(\d{2}\) \d \d{4}-\d{4}/;
 
-    return (
-        elements.name.value.length >= 3 &&
-        emailRegex.test(elements.email.value) &&
-        phoneRegex.test(elements.phone.value) &&
-        elements.message.value.length >= 10
-    );
+  return (
+    elements.name.value.length >= 3 &&
+    emailRegex.test(elements.email.value) &&
+    phoneRegex.test(elements.phone.value) &&
+    elements.message.value.length >= 10
+  );
 }
 
 function generateWhatsAppLink() {
-    const { name, email, phone, message } = elements;
-    const text = `Olá! Me chamo ${name.value}\n` +
-                 `Mensagem: ${message.value}\n\n` +
-                 `Contato: ${phone.value} | ${email.value}`;
+  const { name, email, phone, message } = elements;
+  const text =
+    `Olá! Me chamo ${name.value}\n` +
+    `Mensagem: ${message.value}\n\n` +
+    `Contato: ${phone.value} | ${email.value}`;
 
-    return `https://wa.me/5511952193890?text=${encodeURIComponent(text)}`;
+  return `https://wa.me/5511952193890?text=${encodeURIComponent(text)}`;
 }
 
 function toggleModal(show) {
-    elements.modal.style.display = show ? 'flex' : 'none';
+  elements.modal.style.display = show ? 'flex' : 'none';
 }
 
 elements.btnSubmit.addEventListener('click', () => {
-    if (!validate()) {
-        alert('Preencha todos os campos corretamente!');
-        return; 
-    }
+  if (!validate()) {
+    alert('Preencha todos os campos corretamente!');
+    return;
+  }
 
-    // Atualiza o link do WhatsApp (sem abrir ainda)
-    whatsappHrefForm = generateWhatsAppLink();
-    toggleModal(true);
+  // Atualiza o link do WhatsApp (sem abrir ainda)
+  whatsappHrefForm = generateWhatsAppLink();
+  toggleModal(true);
 });
 
 // Confirmar: Abre WhatsApp
 elements.confirmSend.addEventListener('click', () => {
-    toggleModal(false);
-    window.open(whatsappHrefForm, '_blank');
+  toggleModal(false);
+  window.open(whatsappHrefForm, '_blank');
 });
 
 // Cancelar: Fecha modal
@@ -119,34 +120,33 @@ elements.cancelSend.addEventListener('click', () => toggleModal(false));
 const phoneInput = document.getElementById('phone');
 let lastValidValue = '';
 
-phoneInput.addEventListener('input', function(e) {
-    // Remove caracteres não numéricos
-    let value = e.target.value.replace(/\D/g, '');
-    
-    console.log(value);
-    // Limita a 11 dígitos (DDD + 9 números)
-    value = value.substring(0, 11);
-    
-    // Formatação condicional
-    let formattedValue = value;
-    if (value.length > 0) formattedValue = `(${value.substring(0, 2)}`;
-    if (value.length > 2) formattedValue += `) ${value.substring(2, 3)}`;
-    if (value.length > 3) formattedValue += ` ${value.substring(3, 7)}`;
-    if (value.length > 7) formattedValue += `-${value.substring(7)}`;
-    
-    // Só atualiza se mudou (evita loop)
-    if (formattedValue !== lastValidValue) {
-        e.target.value = formattedValue;
-        lastValidValue = formattedValue;
-        
-    }
+phoneInput.addEventListener('input', function (e) {
+  // Remove caracteres não numéricos
+  let value = e.target.value.replace(/\D/g, '');
+
+  console.log(value);
+  // Limita a 11 dígitos (DDD + 9 números)
+  value = value.substring(0, 11);
+
+  // Formatação condicional
+  let formattedValue = value;
+  if (value.length > 0) formattedValue = `(${value.substring(0, 2)}`;
+  if (value.length > 2) formattedValue += `) ${value.substring(2, 3)}`;
+  if (value.length > 3) formattedValue += ` ${value.substring(3, 7)}`;
+  if (value.length > 7) formattedValue += `-${value.substring(7)}`;
+
+  // Só atualiza se mudou (evita loop)
+  if (formattedValue !== lastValidValue) {
+    e.target.value = formattedValue;
+    lastValidValue = formattedValue;
+  }
 });
 
-document.getElementById('phone').addEventListener('keydown', function(e) {
-    // Permite apenas: Backspace, Tab, setas e números
-    if (!/[0-9]|Backspace|Tab|ArrowLeft|ArrowRight/.test(e.key)) {
-        e.preventDefault();
-    }
+document.getElementById('phone').addEventListener('keydown', function (e) {
+  // Permite apenas: Backspace, Tab, setas e números
+  if (!/[0-9]|Backspace|Tab|ArrowLeft|ArrowRight/.test(e.key)) {
+    e.preventDefault();
+  }
 });
 
 // document.getElementById('phone').addEventListener('input', (e) => {
@@ -166,7 +166,7 @@ document.getElementById('phone').addEventListener('keydown', function(e) {
 // function validateForm() {
 //     const phone = document.getElementById('phone').value;
 //     const isValid = /\(\d{2}\) \d \d{4}-\d{4}/.test(phone);
-    
+
 //     if (!isValid) {
 //         alert("Telefone inválido! Use o formato (DDD) 9 XXXX-XXXX.");
 //         return false;
@@ -214,8 +214,8 @@ document.getElementById('phone').addEventListener('keydown', function(e) {
 //     const phone = formData.get('phone');
 //     const message = formData.get('message');
 
-//     return `Olá Bruno! Meu nome é ${name}. ${message} 
-                
+//     return `Olá Bruno! Meu nome é ${name}. ${message}
+
 // Meus dados de contato:
 // E-mail: ${email}
 // Telefone: ${phone}`;

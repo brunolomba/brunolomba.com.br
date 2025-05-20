@@ -20,13 +20,12 @@ header {
 
 /* Main */
 main {
-    background-color: var(--primary-background-color);
-    margin-top: 130px;
+    margin-top: 10vh;
 }
 
 /* Body */
 body {
-    background: var(--primary-background-color);
+    background: var(--primary-color);
     color: var(--text-color);
     display: flex;
     justify-content: center;
@@ -45,24 +44,24 @@ footer {
 .hero-info__container,
 .hero-highlights__container,
 .works,
+.knowledge,
 .services,
-.contact__container,
+.contact,
 .socialmedia__container {
     padding: 10vh 5vh 10vh;
-}
-
-.contact__container {
-    padding-bottom: 0;
-}
-
-/* Margin Bottom Section */
-body {
-    margin-bottom: 80px;
 }
 
 /* Containers Patterns */
 .works__container,
 .services__container,
 .form__container {
-    padding: 5vh 0 0;
+    width: 100%;
+}
+
+/* Background Gradient Colors */
+.works,
+.services {
+    background: linear-gradient(90deg, var(--green), var(--purple));
+    background-size: 200% 100%;
+    animation: moveLineColor 5s linear infinite alternate;
 }

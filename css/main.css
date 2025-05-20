@@ -1,32 +1,35 @@
 /* Base */
 @import './base/reset.css';
-@import './base/responsive.css';
-@import './base/typography.css';
 @import './base/variables.css';
+@import './base/typography.css';
 
 /* Layouts */
 @import './layout/structure.css';
+@import './layout/hero.css';
+@import './layout/services.css';
+@import './layout/knowledge.css';
+@import './layout/works.css';
+@import './layout/contact.css';
+@import './layout/form.css';
 
 /* Theme */
 @import './theme/theme.css';
 
 /* Components */
 @import './components/button.css';
-@import './components/contact.css';
-@import './components/form.css';
-@import './components/hero.css';
 @import './components/logo.css';
 @import './components/modal-submit-form.css';
 @import './components/navigation.css';
-@import './components/services.css';
 @import './components/social-medias.css';
 @import './components/toggle-theme.css';
 @import './components/whatsapp-fixed.css';
-@import './components/works-brands.css';
 
 /* Utils */
 @import './utils/animation.css';
 @import './utils/helpers.css';
+
+/* Base */
+@import './base/responsive.css';
 
 /* Introdução */
 #intro {
@@ -54,38 +57,4 @@
 
 .intro-text strong {
     color: var(--green);
-}
-
-/* Knowledge */
-/* Tecnology Icons */
-.knowledge {
-    display: flex;
-    background-color: var(--secondary-background-color);
-    flex-direction: column;
-    padding: 40px;
-}
-
-.knowledge__title {
-    text-align: center;
-    font-size: var(--font-size-large);
-}
-
-.tech-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 20px;
-}
-
-.tech-item {
-    display: flex;
-    padding: 20px;
-    width: 50px;
-    background-color: var(--secondary-background-color);
-    flex-direction: column;
-    align-items: center;
-}
-
-.fab:before {
-    font-size: var(--font-size-large);
 }
