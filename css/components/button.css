@@ -64,7 +64,7 @@
 
 /* Button Submit */
 .btn-submit {
-    background-color: var(--whatsapp-green);
+    background-color: var(--green);
     color: white;
     padding: 15px 20px;
     font-size: var(--font-size-normal);
@@ -76,5 +76,5 @@
 }
 
 .btn-submit:hover {
-    background-color: var(--whatsapp-green-light);
+    background-color: var(--purple);
 }

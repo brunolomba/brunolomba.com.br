@@ -26,18 +26,17 @@
 
 /* Hero Image or Animation */
 .hero-animation__container {
-    padding-top: 10vh;
-    height: 80vw;
-    overflow: hidden;
+    margin-top: -100px;
+    /* overflow: hidden; */
 }
 
 .hero-animation {
     display: flex;
-    transform: scale(2.6);
 }
 
 /* Hero Highlights */
 .hero-highlights__container {
+    padding-top: 10vh;
     display: flex;
     flex-direction: column;
     gap: 20px;

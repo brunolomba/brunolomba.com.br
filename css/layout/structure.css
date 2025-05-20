@@ -21,6 +21,7 @@ header {
 /* Main */
 main {
     margin-top: 10vh;
+    overflow: hidden;
 }
 
 /* Body */

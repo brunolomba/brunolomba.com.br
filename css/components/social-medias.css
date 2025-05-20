@@ -17,13 +17,14 @@
 }
 
 .fa-linkedin-in:hover {
-    color: #0e76a8;
+    color: var(--blue);
+    ;
 }
 
 .fa-square-github:hover {
-    color: #C06EFF;
+    color: var(--purple);
 }
 
 .fa-google:hover {
-    color: gold;
+    color: var(--green);
 }

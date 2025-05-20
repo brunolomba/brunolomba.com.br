@@ -49,6 +49,7 @@
 
     /* Hero Image */
     .hero-animation__container {
+        margin-top: -200px;
         flex-direction: row;
         display: inline;
         width: 45%;
@@ -58,7 +59,7 @@
     }
 
     .hero-animation {
-        transform: scale(2.7);
+        transform: scale(1.6);
     }
 
     .hero-highlights__container {
@@ -77,7 +78,6 @@
         font-size: 5rem;
         line-height: 4.5rem;
     }
-
 }
 
 @media (min-width: 1024px) {
@@ -92,11 +92,12 @@
     /* Hero */
     .hero {
         justify-self: center;
+        width: 100%;
     }
 
     /* Hero Infos */
     .hero-info__container {
-        width: 55%;
+        width: 50%;
         align-self: center;
         margin-bottom: 0;
     }
@@ -108,7 +109,7 @@
     }
 
     .hero-animation {
-        transform: scale(2.8);
+        transform: scale(1.4);
     }
 
     /* Hero Highlights */

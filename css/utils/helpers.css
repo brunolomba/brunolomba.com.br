@@ -18,7 +18,7 @@
 }
 
 .color-publicidade {
-    color: var(--yellow);
+    color: var(--blue);
 }
 
 .color-marketing {
@@ -35,7 +35,7 @@
 }
 
 .border-publicidade {
-    border: 1px solid var(--yellow);
+    border: 1px solid var(--blue);
 }
 
 .border-marketing {
@@ -52,7 +52,7 @@
 }
 
 .fill-publicidade {
-    fill: var(--yellow);
+    fill: var(--blue);
 }
 
 .fill-marketing {

@@ -22,9 +22,9 @@
 .line-color {
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg in hsl longer hue, red, blue);
-    background-size: 200% 100%;
-    animation: moveLineColor 10s linear infinite alternate;
+    background: linear-gradient(90deg, var(--green), var(--purple), var(--pink));
+    background-size: 300% 100%;
+    animation: moveLineColor 5s linear infinite alternate;
 }
 
 .line-top {
