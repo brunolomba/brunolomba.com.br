@@ -13,10 +13,9 @@
 
 [data-theme='dark'] #toggle-theme {
     background-color: var(--primary-color);
-    border: 2px solid var(--secondary-color);
+    border: 2px solid white;
 }
 
 [data-theme='light'] #toggle-theme {
-    background-color: var(--yellow);
-    border: 2px solid var(--primary-color);
+    background-color: gold;
 }
