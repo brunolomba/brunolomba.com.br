@@ -61,10 +61,22 @@
     margin-bottom: 5vh;
 }
 
-/* Title Medias professionals */
-.socialmedia__title {
+/* Nav Areas */
+.areas-text {
+    font-size: 1.4rem;
+}
+
+/* Hero */
+.hero-title {
+    font-weight: 700;
+    font-size: 3.8rem;
+    line-height: 4.5rem;
+}
+
+.hero-text {
     font-size: var(--font-size-large);
-    margin-bottom: 2vh;
+    line-height: 2.8rem;
+    color: var(--secondary-color);
 }
 
 /* Knowledge */
@@ -117,9 +129,15 @@
     font-size: var(--font-size-large);
 }
 
+/* Title Medias professionals */
+.socialmedia__title {
+    font-size: var(--font-size-large);
+    margin-bottom: 2vh;
+}
+
 /* Modal Confirmation */
 .modal__title {
-    color: var(--primary-color);
+    color: black;
     font-size: 2rem;
     margin-bottom: 10px;
 }

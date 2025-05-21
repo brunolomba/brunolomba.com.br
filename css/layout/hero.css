@@ -9,19 +9,7 @@
 .hero-info__container {
     display: flex;
     flex-direction: column;
-    gap: 40px
-}
-
-.hero-title {
-    font-weight: 700;
-    font-size: 3.8rem;
-    line-height: 4rem;
-}
-
-.hero-text {
-    font-size: var(--font-size-normal);
-    line-height: 2.5rem;
-    color: var(--secondary-color);
+    gap: 30px
 }
 
 /* Hero Image or Animation */
@@ -39,12 +27,11 @@
     padding-top: 10vh;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 40px;
 }
 
 .highlights__container {
     display: flex;
-    padding: 10px 20px;
     gap: 10px;
     border-radius: var(--border);
 
@@ -58,10 +45,15 @@
 
 .projects-done__title,
 .projects-done__texts {
-    font-size: var(--font-size-normal);
+    font-size: var(--font-size-large);
+}
+
+.projects-done__title {
     font-weight: 500;
 }
 
 .projects-done__texts {
+    font-weight: 300;
     color: var(--text-color);
+    font-size: var(--font-size-normal);
 }

@@ -62,7 +62,7 @@ footer {
 /* Background Gradient Colors */
 .works,
 .services {
-    background: linear-gradient(90deg, var(--green), var(--purple));
+    background: linear-gradient(45deg, var(--green), var(--purple));
     background-size: 200% 100%;
     animation: moveLineColor 5s linear infinite alternate;
 }
