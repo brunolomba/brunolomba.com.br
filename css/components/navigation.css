@@ -9,13 +9,14 @@
     align-items: center;
     padding: 80px 0 0;
     background-color: var(--primary-color);
-    transform: translateY(-80px);
+    transform: translateY(calc((-100%) + 128px));
+    /* transform: translateY(-80px); */
     transition: transform 3s ease;
 }
 
-.nav__hidden {
+/* .nav__hidden {
     transform: translateY(calc((-100%) + 128px));
-}
+} */
 
 .nav-list {
     display: flex;
